@@ -13,6 +13,14 @@
 
 https://user-images.githubusercontent.com/85418632/211225192-7e5d1116-2f4f-4305-bb9b-437fe47df071.mp4
 
+## Ruby (update from ruby 3.1.0p0 --> 3.3.1):
+
+1. Install all Ruby deps:
+`sudo apt-get update
+sudo apt-get install git-core zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev software-properties-common libffi-dev
+`
+
+
 ## Installation
 
 ### Use the template
