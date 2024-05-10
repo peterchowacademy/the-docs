@@ -8,11 +8,9 @@ name: Deploy Jekyll site to Pages
 
 on:
   pull_request:
-    types:
-      - closed
+    types: [closed]
   push:
-    - "main"
-  # Allows you to run this workflow manually from the Actions tab
+    branches: [main]
   workflow_dispatch:
 
 
