@@ -13,12 +13,74 @@
 
 https://user-images.githubusercontent.com/85418632/211225192-7e5d1116-2f4f-4305-bb9b-437fe47df071.mp4
 
-## Ruby (update from ruby 3.1.0p0 --> 3.3.1):
+## Ruby (update from ruby 3.1.0p0 --> 3.3.1): Fixing Ruby complier issue
+### Reference  from (https://gorails.com/setup/ubuntu/24.04)
 
-1. Install all Ruby deps:
-`sudo apt-get update
-sudo apt-get install git-core zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev software-properties-common libffi-dev
-`
+1. Install all Ruby deps: <br/>
+
+```bash 
+sudo apt-get update && sudo apt-get install git-core zlib1g-dev build-essential libssl-dev && libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev  && libcurl4-openssl-dev software-properties-common libffi-dev 
+```
+
+2. Install Ruby version manager : ASDF <br/>
+
+```bash
+cd
+git clone https://github.com/excid3/asdf.git ~/.asdf
+echo '. "$HOME/.asdf/asdf.sh"' >> ~/.bashrc
+echo '. "$HOME/.asdf/completions/asdf.bash"' >> ~/.bashrc
+echo 'legacy_version_file = yes' >> ~/.asdfrc
+echo 'export EDITOR="code --wait"' >> ~/.bashrc
+exec $SHELL 
+```
+
+3. Install ASDF plugin
+```bash
+asdf plugin add ruby
+asdf plugin add nodejs
+```
+
+4. Install desired Ruby
+```bash
+asdf install ruby 3.3.1
+asdf global ruby 3.3.1
+```
+
+5. Update latest Rubygems version
+```bash
+gem update --system
+```
+
+6. Check Ruby version and which Ruby dir
+```bash
+which ruby && ruby -v
+``` 
+
+7. cd back to the-docs dir and insatll/update all the bundle exes
+```bash
+bundle install
+```
+
+8. Update to Latest Gem & install bundler (= Ruby dep manager)
+```bash
+gem update --system && gem install bundler
+```
+9. Gem install the missing deps and bundle install again
+```bash
+gem install io-event -v 1.2.3
+gem install ruby2_keywords -v 0.0.5
+bundle install --force
+```
+
+10. cd back to the-docs and start up server:
+```bash
+bundle exec jekyll serve --livereload
+```
+
+
+## Setting up deployment:
+Refer to this Github [document](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll#creating-your-site)
+
 
 
 ## Installation

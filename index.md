@@ -47,10 +47,6 @@ Other than that, you're free to customize sites that you create with the templat
 {: .note }
 See the theme [README][Just the Docs README] for how to use the theme as a gem without creating a new site.
 
-## About the project
-
-Just the Docs is &copy; 2017-{{ "now" | date: "%Y" }} by [Patrick Marsceill](https://patrickmarsceill.com).
-
 ### License
 
 Just the Docs is distributed by an [MIT license](https://github.com/just-the-docs/just-the-docs/tree/main/LICENSE.txt).
