@@ -10,11 +10,14 @@ permalink: /
 {: .fs-9 }
 
 This website serves to help Milton Chow to better consolidate his notes from the hetic life he has.
-> RIP Milton Chow, May 5, 2024 3:49am 
+> RIP Milton Chow, May 5, 2024 3:49am  
 {: .fs-6 .fw-300 }
 
-[Get started now](#getting-started){: .btn .btn-green .fs-5 .mb-4 .mb-md-0 .mr-2 }
-[View my GitHub source code](https://github.com/edamame852/the-docs){: .btn .fs-5 .mb-4 .mb-md-0 }
+### Github Action Workflow CI:
+![THIS BADGE IS AWESOME](https://github.com/edamame852/the-docs/actions/workflows/deploy.yml/badge.svg)
+
+[Let's get started](#getting-started){: .btn .btn-blue .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[View my GitHub source code](https://github.com/edamame852/the-docs){: .btn .fs-5 .mb-4 .mb-md-0 .mr-2}
 
 ---
 
