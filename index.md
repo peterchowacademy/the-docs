@@ -10,6 +10,7 @@ permalink: /
 {: .fs-9 }
 
 This website serves to help Milton Chow to better consolidate his notes from the hetic life he has.
+> RIP Milton Chow, May 5, 2024 3:49am 
 {: .fs-6 .fw-300 }
 
 [Get started now](#getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
