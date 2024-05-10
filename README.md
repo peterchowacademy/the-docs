@@ -1,4 +1,4 @@
-<p align="right">
+<!-- <p align="right">
     <a href="https://badge.fury.io/rb/just-the-docs"><img src="https://badge.fury.io/rb/just-the-docs.svg" alt="Gem version"></a> <a href="https://github.com/just-the-docs/just-the-docs/actions/workflows/ci.yml"><img src="https://github.com/just-the-docs/just-the-docs/actions/workflows/ci.yml/badge.svg" alt="CI Build status"></a> <a href="https://app.netlify.com/sites/just-the-docs/deploys"><img src="https://api.netlify.com/api/v1/badges/9dc0386d-c2a4-4077-ad83-f02c33a6c0ca/deploy-status" alt="Netlify Status"></a>
 </p>
 <br><br>
@@ -11,7 +11,7 @@
 
 <p align="center">A video walkthrough of various Just the Docs features</p>
 
-https://user-images.githubusercontent.com/85418632/211225192-7e5d1116-2f4f-4305-bb9b-437fe47df071.mp4
+https://user-images.githubusercontent.com/85418632/211225192-7e5d1116-2f4f-4305-bb9b-437fe47df071.mp4 -->
 
 ## Ruby (update from ruby 3.1.0p0 --> 3.3.1): Fixing Ruby complier issue
 ### Reference  from (https://gorails.com/setup/ubuntu/24.04)
@@ -77,11 +77,27 @@ bundle install --force
 bundle exec jekyll serve --livereload
 ```
 
+Note: In case there are any errors/ warning messages when calling Gem
+You can try `gem pristine <affected gem deps> --version <targeted-version>`
+(i.e. gem pristine gem-wrappers --version 1.4.0)
 
-## Setting up deployment:
+## Setting up deployment (Jekyll -> Github Page Site):
 Refer to this Github [document](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll#creating-your-site)
 
+High-level logic:
+- Prereqs:
+    - Jekyll (a Gem)
+    - Bundler (a Gem and a Ruby dep orchestraor)
+    - Ruby
 
+1. Deploying Jekyll to GitHub Pages:
+Github repo -> Settings -> Pages -> Branch select main, /root 
+
+2. The default Github Action will run
+Based on this workflow file: Not 100% sure what this is
+
+Default by github: pages build and deployment 
+Manually create workflows please click [here](https://jekyllrb.com/docs/continuous-integration/github-actions/)
 
 ## Installation
 
