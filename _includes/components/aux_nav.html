@@ -9,17 +9,17 @@
     </li>
     <li class="aux-nav-list-item">
       <div class="site-button">
-        <button class="btn js-toggle-dark-mode">Hi</button>
+        <button class="btn js-toggle-dark-mode">Light/Dark Mode</button>
         <script>
           const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
 
           jtd.addEvent(toggleDarkMode, 'click', function () {
             if (jtd.getTheme() === 'dark') {
               toggleDarkMode.textContent = 'Dark dark dark side';
-              jtd.setTheme('dark');
+              jtd.setTheme('light');
             } else {
               toggleDarkMode.textContent = 'Head towards the light';
-              jtd.setTheme('light');
+              jtd.setTheme('dark');
             }
           });
         </script>
