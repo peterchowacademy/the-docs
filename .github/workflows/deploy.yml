@@ -10,7 +10,7 @@ on:
   pull_request:
     types: [closed]
   push:
-    branches: [main]
+    branches: [main, new-page]
   workflow_dispatch:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
