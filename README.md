@@ -14,6 +14,7 @@
 https://user-images.githubusercontent.com/85418632/211225192-7e5d1116-2f4f-4305-bb9b-437fe47df071.mp4 -->
 
 ## Ruby (update from ruby 3.1.0p0 --> 3.3.1): Fixing Ruby complier issue
+> I pretty much gave up on using RVM and used asdf instead (RVM = manages Ruby Version, asdf = manages more than Ruby, could be python ...)
 ### Reference  from (https://gorails.com/setup/ubuntu/24.04)
 
 1. Install all Ruby deps: <br/>

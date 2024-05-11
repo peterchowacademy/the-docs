@@ -22,7 +22,11 @@ This website serves to help Milton Chow to better consolidate his notes from the
 ---
 
 {: .warning }
-> This website documents 
+> This website contains: anime, coding, snowboarding, cooking, diving, Language learning, life-skills, parenting 
+
+High level idea of how this site is generated:
+
+Jekyll (1 of the Gems in Ruby managed by Bundle) --> static site -- Github action (actions to set up and build w/ Ruby, node) --> Github Pages
 
 Just the Docs is a theme for generating static websites with [Jekyll]. You can write source files for your web pages using [Markdown], the [Liquid] templating language, and HTML.[^1] Jekyll builds your site by converting all files that have [front matter] to HTML. Your [Jekyll configuration] file determines which theme to use, and sets general parameters for your site, such as the URL of its home page.
 
