@@ -22,7 +22,7 @@ grand_parent: Cooking 🍙🍣🍱🥢
 | 11  | Thinly sliced Cloves of garlic again       |  | 3 cloves |
 | 12   | touch of salt        |  |  |
 | 13   | Parparika again        |  |  |
-| 14   | C        |  |  |
+| 14   | Chicken Thigh (Amy)        |  |  |
 | 9   | Text        |  |  |
 | 9   | Text        |  |  |
 | 9   | Text        |  |  |
