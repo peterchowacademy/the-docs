@@ -11,14 +11,18 @@
       <div class="site-button">
         <button class="btn js-toggle-dark-mode">Light/Dark Mode</button>
         <script>
+          window.addEventListener('load', function () {
+            toggleDarkMode.click();
+          }); // Forcing button to be auto-clicked on render OH IT WORKED
+        </script>
+        <script>
           const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
-
           jtd.addEvent(toggleDarkMode, 'click', function () {
             if (jtd.getTheme() === 'dark') {
-              toggleDarkMode.textContent = 'Dark dark dark side';
+              toggleDarkMode.textContent = 'Light/Dark Mode';
               jtd.setTheme('light');
             } else {
-              toggleDarkMode.textContent = 'Head towards the light';
+              toggleDarkMode.textContent = 'Light/Dark Mode';
               jtd.setTheme('dark');
             }
           });
