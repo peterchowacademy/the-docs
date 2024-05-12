@@ -10,6 +10,7 @@ permalink: /docs/coding-practices
 
 The idea is to log all the knowledge I have thus far for coding on this web doc
 I intend to log the things I learn for the following languages/framework/ on my site:
+
 - Python
 - CICD 
     - YAML data serial-ization language (i.e. Github Action)
@@ -17,7 +18,7 @@ I intend to log the things I learn for the following languages/framework/ on my 
 - Frontend
     - React
     - Redux
-    - AgGrid non-enterprise
+    - AgGrid non-enterprise (i.e community version)
 - Backend
     - Springboot Framework
     - SwaggerUI
@@ -27,3 +28,4 @@ I intend to log the things I learn for the following languages/framework/ on my 
     - Azure
         - VM Partion
 - Linux distro servers (i.e. Ubuntu)
+{: .fs-2 .fw-300 }
