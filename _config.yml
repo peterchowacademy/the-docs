@@ -118,8 +118,8 @@ nav_sort: case_sensitive # Capital letters sorted before lowercase
 
 # External navigation links
 nav_external_links:
-  - title: Google HK
-    url: "https://www.google.com.hk"
+  - title: Github Source Code 🤖
+    url: "https://github.com/edamame852/the-docs"
 
 liquid:
    error_mode: strict

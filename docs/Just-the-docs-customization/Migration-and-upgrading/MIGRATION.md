@@ -1,6 +1,7 @@
 ---
 title: Migration and Upgrading
 layout: default
+parent: Just-the-docs-customization
 ---
 
 # Migrating and Upgrading
@@ -41,7 +42,7 @@ This document contains instructions on how to migrate and upgrade Just the Docs 
 > and pull the changes of a new release to your clone,
 > you may need to resolve merge conflicts.
 
-[CHANGELOG]: {{ site.baseurl }}{% link CHANGELOG.md %}
+<!-- [CHANGELOG]: {{ site.baseurl }}{% link CHANGELOG.md %} -->
 
 ## v0.6.x - v0.7.0
 
@@ -373,7 +374,7 @@ For changes since v0.3.3, the log usually references the merged PR that made the
 
 #### Configuration
 
-- Mermaid support: first-class support for [Mermaid](https://mermaid.js.org/) - a JavaScript-based diagram and charting tool supported by GitHub - has been added to the theme. **This feature is opt-in.** See the new doc subsections in [Configuration]({% link docs/configuration.md %}#mermaid-diagrams) and [Code]({% link docs/ui-components/code.md %}#mermaid-diagram-code-blocks) for more.
+- Mermaid support: first-class support for [Mermaid](https://mermaid.js.org/) - a JavaScript-based diagram and charting tool supported by GitHub - has been added to the theme. **This feature is opt-in.** See the new doc subsections in [Configuration]({% link docs/Just-the-docs-customization/Configuration/configuration.md %}#mermaid-diagrams) and [Code]({% link docs/ui-components/code.md %}#mermaid-diagram-code-blocks) for more.
 - Multiple Google Analytics tags are now supported. PR: [#1029]
 
 #### Customization
@@ -414,7 +415,7 @@ For more, see [Custom layouts and includes]({% link docs/customization.md %}#cus
 
 #### Search
 
-In addition to customizing the search placeholder, we've also added the ability to provide custom content to the search index. for more, see [Custom content for search index]({% link docs/search.md %}#custom-content-for-search-index). PR: [#1068].
+In addition to customizing the search placeholder, we've also added the ability to provide custom content to the search index. for more, see [Custom content for search index]({% link docs/Just-the-docs-customization/Search/search.md %}#custom-content-for-search-index). PR: [#1068].
 
 #### Styling
 
