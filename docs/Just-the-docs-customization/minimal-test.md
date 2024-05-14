@@ -1,6 +1,7 @@
 ---
 layout: minimal
 title: Minimal layout test
+parent: Just-the-docs-customization
 nav_exclude: true
 ---
 

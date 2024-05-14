@@ -42,7 +42,7 @@ This document contains instructions on how to migrate and upgrade Just the Docs 
 > and pull the changes of a new release to your clone,
 > you may need to resolve merge conflicts.
 
-<!-- [CHANGELOG]: {{ site.baseurl }}{% link CHANGELOG.md %} -->
+[CHANGELOG]: {{ site.baseurl }}{% link docs/Just-the-docs-customization/CHANGELOG.md %}
 
 ## v0.6.x - v0.7.0
 
@@ -384,7 +384,7 @@ For changes since v0.3.3, the log usually references the merged PR that made the
 
 #### Custom Includes
 
-We've added several custom `_includes` to provide users with more customization options for different site elements. We've also added a section to [Configuration]({% link docs/customization.md %}#override-includes) to outline these.
+We've added several custom `_includes` to provide users with more customization options for different site elements. We've also added a section to [Configuration]({% link docs/Just-the-docs-customization/customization.md %}#override-includes) to outline these.
 
 All of these are opt-in by default; however, **these may be breaking if you have existing `_includes` with the same name**.
 
@@ -402,7 +402,7 @@ In a future (version 1) release, we may rename the custom include files.
 
 We've broken up the default layout (`_layouts/default.html`) into multiple reusable components. This should have no impact on most users; however, it should make it easier to implement custom layouts.
 
-For more, see [Custom layouts and includes]({% link docs/customization.md %}#custom-layouts-and-includes). PR: [#1058].
+For more, see [Custom layouts and includes]({% link docs/Just-the-docs-customization/customization.md %}#custom-layouts-and-includes). PR: [#1058].
 
 #### Navigation
 

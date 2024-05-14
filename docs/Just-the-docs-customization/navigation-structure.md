@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Navigation Structure
-nav_order: 5
+parent: Just-the-docs-customization
 ---
 
 # Navigation Structure

@@ -118,7 +118,7 @@ New (v0.4.0)
 {: .label .label-green }
 
 External links can be added to the navigation through the `nav_external_links` option.
-See [Navigation Structure]({% link docs/navigation-structure.md %}#external-navigation-links) for more details.
+See [Navigation Structure]({% link docs/Just-the-docs-customization/navigation-structure.md %}#external-navigation-links) for more details.
 
 ## Footer content
 
@@ -174,7 +174,7 @@ jtd.addEvent(toggleDarkMode, 'click', function(){
 });
 </script>
 
-See [Customization]({% link docs/customization.md %}) for more information.
+See [Customization]({% link docs/Just-the-docs-customization/customization.md %}) for more information.
 
 ## Callouts
 {: .d-inline-block }
