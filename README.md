@@ -1,3 +1,4 @@
+
 <!-- <p align="right">
     <a href="https://badge.fury.io/rb/just-the-docs"><img src="https://badge.fury.io/rb/just-the-docs.svg" alt="Gem version"></a> <a href="https://github.com/just-the-docs/just-the-docs/actions/workflows/ci.yml"><img src="https://github.com/just-the-docs/just-the-docs/actions/workflows/ci.yml/badge.svg" alt="CI Build status"></a> <a href="https://app.netlify.com/sites/just-the-docs/deploys"><img src="https://api.netlify.com/api/v1/badges/9dc0386d-c2a4-4077-ad83-f02c33a6c0ca/deploy-status" alt="Netlify Status"></a>
 </p>
@@ -15,6 +16,7 @@ https://user-images.githubusercontent.com/85418632/211225192-7e5d1116-2f4f-4305-
 
 ## Ruby (update from ruby 3.1.0p0 --> 3.3.1): Fixing Ruby complier issue
 > I pretty much gave up on using RVM and used asdf instead (RVM = manages Ruby Version, asdf = manages more than Ruby, could be python ...)
+> There are some conflicts with rvm & asdf, hence rvm was removed. Use `rvm implode` to remove all /rvm & `gem uninstall rvm` removing all rvm gems rubbies
 ### Reference  from (https://gorails.com/setup/ubuntu/24.04)
 
 1. Install all Ruby deps: <br/>
