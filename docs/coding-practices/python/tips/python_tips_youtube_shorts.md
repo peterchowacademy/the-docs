@@ -1,5 +1,5 @@
 ---
-title: Python tips - Youtube Shorts
+title: Tips - Youtube Shorts
 layout: default
 parent: Python 
 grand_parent: Coding Practices

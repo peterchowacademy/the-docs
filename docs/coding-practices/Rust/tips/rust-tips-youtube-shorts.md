@@ -1,5 +1,5 @@
 ---
-title: Rust tips - Youtube Shorts
+title: Tips - Youtube Shorts
 layout: default
 parent: Rust 
 grand_parent: Coding Practices
