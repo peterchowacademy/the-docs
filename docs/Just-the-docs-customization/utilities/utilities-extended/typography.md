@@ -2,6 +2,7 @@
 layout: default
 title: Typography
 parent: Utilities
+grand_parent: Just-the-docs-customization
 ---
 
 # Typography Utilities
