@@ -22,6 +22,9 @@ grand_parent: Coding Practices
 
 We will use the follow Fruit class as basis for all the following examples
 {:.warning}
+
+Please refer to [this](https://www.youtube.com/watch?v=y1ZWQQEe5PM) youtube video
+
 ```python 
 class Fruit:
     # * forces name & grams to be manditory keyword arguments
