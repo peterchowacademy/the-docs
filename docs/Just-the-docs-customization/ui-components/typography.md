@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Typography
-parent: UI Components
+parent: Just-the-docs-customization
 nav_order: 1
 ---
 

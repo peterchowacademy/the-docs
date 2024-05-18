@@ -1,9 +1,8 @@
 ---
 layout: default
 title: UI Components
-nav_order: 3
+parent: Just-the-docs-customization
 has_children: true
-permalink: /docs/ui-components
 ---
 
 # UI Components
