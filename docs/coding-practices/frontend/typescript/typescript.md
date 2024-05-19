@@ -47,3 +47,10 @@ Option knowledge:
 - Clean up working area `npm run clean`
 - Build project `npm run build`
 - Host the project on localhost `npm run start`
+
+# Coding commences
+
+## Adding a youtube svg icon
+1. You can download the 
+2. To visualize the svg path d attribute inputs, visit [svg path visualizer](https://svg-path-visualizer.netlify.app/#) webpage
+3. To modify the svg paths (inlcuding scaling, translating...), you can try this [svg path editor](https://yqnn.github.io/svg-path-editor/) 
