@@ -15,6 +15,27 @@ grand_parent: Coding Practices
 {:toc}
 
 ---
+# Vite Project setup
+
+## Build tools for generate application
+- Vite 
+To trigger Vite to create a project from scratch `npm create vite@latest`
+
+- nextjs
+
+- create react app
+## Framework
+- vanilla
+- vue
+- react
+- preact
+- lit
+- svelte
+
+## Variant
+- javascript
+- typescript
+
 
 # Typescript project setup
 
@@ -55,3 +76,14 @@ Option knowledge:
 2. To visualize the svg path d attribute inputs, visit [svg path visualizer](https://svg-path-visualizer.netlify.app/#) webpage
 3. To modify the svg paths (inlcuding scaling, translating...), you can try this [svg path editor](https://yqnn.github.io/svg-path-editor/) 
 4. Trying to commit directly on the main branch
+
+# Deploying to github pages
+1. Add `output:'export',` to your next.config.js under nextConfig
+2. Make sure everything is at relative paths `../xyz.tsx`
+3. Commit Changes, and head to settings page of your repo
+4. Settings -> Pages, source pick github action
+5. Click browse all workflows, and search next -> Configure
+6. Commit changes, submit and that's it
+
+For more details please refer to [this youtube video](https://www.youtube.com/watch?v=WoL3xbkAfOU)
+{:.warning}
