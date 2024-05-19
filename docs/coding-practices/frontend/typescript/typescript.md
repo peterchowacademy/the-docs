@@ -54,4 +54,4 @@ Option knowledge:
 1. You can download the 
 2. To visualize the svg path d attribute inputs, visit [svg path visualizer](https://svg-path-visualizer.netlify.app/#) webpage
 3. To modify the svg paths (inlcuding scaling, translating...), you can try this [svg path editor](https://yqnn.github.io/svg-path-editor/) 
-4. Trying to commit directly on the main branch 
+4. Trying to commit directly on the main branch
