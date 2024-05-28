@@ -17,7 +17,7 @@ grand_parent: Coding Practices
 ---
 
 # Dunder Methods (from Youtube by Indently)
-## 5 useful dunder methods ```__eq__``` ```__format__``` ```__or__``` ```__repr__``` ```__getitem__``` 
+## 5 useful dunder methods (aka magic methods) ```__eq__``` ```__format__``` ```__or__``` ```__repr__``` ```__getitem__``` 
 {: .fs-6 .fw-300 }
 
 We will use the follow Fruit class as basis for all the following examples
