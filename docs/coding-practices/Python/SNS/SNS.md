@@ -1,11 +1,11 @@
 ---
-title: Basics
+title: SNS
 layout: default
 parent: Python 
 grand_parent: Coding Practices
 ---
 
-# Python basics
+# SNS
 {: .no_toc }
 
 ## Table of contents
@@ -16,7 +16,7 @@ grand_parent: Coding Practices
 
 ---
 
-# Dunder Methods 
+# Dunder Methods (from Youtube by Indently)
 ## 5 useful dunder methods ```__eq__``` ```__format__``` ```__or__``` ```__repr__``` ```__getitem__``` 
 {: .fs-6 .fw-300 }
 

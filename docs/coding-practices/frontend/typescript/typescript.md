@@ -87,3 +87,20 @@ Option knowledge:
 
 For more details please refer to [this youtube video](https://www.youtube.com/watch?v=WoL3xbkAfOU)
 {:.warning}
+
+# Adding in i18n internationalization via next-intl
+
+For more information please refer to [next-intl webpage](https://next-intl-docs.vercel.app/docs/getting-started/app-router/with-i18n-routing)
+
+1. Go to your project and `npm install i18next react-i18next i18next-resources-to-backend next-i18n-router`
+<!-- 2. Refactor your project, add message/ dir same level as src/ and add next.config.mjs same level as package.json
+3. put en.json under message/
+4. Add 2 more files under src/ (middleware.ts and i18n.ts)
+5. Add the following to your en,json
+```json
+{
+    "Index": {
+        "title": "Hello World"
+    }
+}
+``` -->

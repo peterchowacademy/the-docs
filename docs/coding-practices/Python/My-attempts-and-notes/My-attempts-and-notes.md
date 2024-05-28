@@ -1,12 +1,27 @@
 ---
-title: Tips - Youtube Shorts
+title: My attempts and notes
 layout: default
 parent: Python 
 grand_parent: Coding Practices
 ---
+# Personal Notes or My Attempts
+{: .no_toc }
+
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+---
+
+# Tox 
+
+Tox is a venv managing tool that aims to integrate automative and standardize testing  
+
 # Python tips 
 
-1. Finding prime numbers in a list (slow vs quick) [@b001](https://www.youtube.com/shorts/g9fIWtSexLs)
+## Finding prime numbers in a list (slow vs quick) [@b001](https://www.youtube.com/shorts/g9fIWtSexLs)
 > ### Technique used: filter(), list-comprehension
 
 ```python
