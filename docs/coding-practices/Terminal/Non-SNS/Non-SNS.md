@@ -29,6 +29,19 @@ bind '"\t":menu-complete'
 ```
 
 ## Setting up your PS1 terminal outlooks
+
+{% raw %}
+PS1+="\[${white}\][\D{%Y/%m/%d %H:%M:%S}]"; #TIME
+PS1+="\[${blue}\]\u";
+PS1+="\[${white}\]:";
+PS1+="\[${orange}\]\h";
+PS1+="\[${black}\] ";
+PS1+="\[${green}\]\w";
+PS1+="\[${white}\] \$ ";
+PS1+="\[${reset}\]";
+export PS1;
+{% endraw %}
+
 ```bash
 #--------------------
 # PS1 profile setup
