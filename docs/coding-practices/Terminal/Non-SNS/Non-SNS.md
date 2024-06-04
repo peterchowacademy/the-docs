@@ -44,7 +44,7 @@ bold=$(tput bold);
 reset=$(tput sgr0);
 
 PS1="\[${bold}\]\n"; #Bold Fonts
-PS1+="\[${white}\][\D{%Y/%m/%d %H:%M:%S}]"; #TIME
+#PS1+="\[${white}\][\D{%Y/%m/%d %H:%M:%S}]"; #I'm hiding this due to compliation error on jekyll
 PS1+="\[${blue}\]\u";
 PS1+="\[${white}\]:";
 PS1+="\[${orange}\]\h";
