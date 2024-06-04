@@ -1,7 +1,7 @@
 ---
 title: Non-SNS
 layout: default
-parent: SAMPLE 
+parent: Terminal 
 grand_parent: Coding Practices
 ---
 
