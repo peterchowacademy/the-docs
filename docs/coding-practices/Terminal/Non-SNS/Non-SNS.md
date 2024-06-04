@@ -33,11 +33,11 @@ bind '"\t":menu-complete'
 #--------------------
 # PS1 profile setup
 #--------------------
-orange=$( tput setaf 166);
-yellow=$( tput setaf 228);
-green=$( tput setaf 71);
-black=$( tput setaf 16);
-blue=$( tput setaf 27);
+orange=$(tput setaf 166);
+yellow=$(tput setaf 228);
+green=$(tput setaf 71);
+black=$(tput setaf 16);
+blue=$(tput setaf 27);
 white=$(tput setaf 15);
 
 bold=$(tput bold);
@@ -53,7 +53,6 @@ PS1+="\[${green}\]\w";
 PS1+="\[${white}\] \$ ";
 PS1+="\[${reset}\]";
 export PS1;
-
 ```
 
 # Setting up git (namely `.gitconfig`)
