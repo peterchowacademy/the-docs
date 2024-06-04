@@ -1,7 +1,7 @@
 ---
 title: My attempts and notes
 layout: default
-parent: SAMPLE 
+parent: Terminal 
 grand_parent: Coding Practices
 ---
 # Personal Notes or My Attempts
