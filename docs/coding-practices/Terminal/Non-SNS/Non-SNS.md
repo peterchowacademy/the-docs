@@ -15,3 +15,15 @@ grand_parent: Coding Practices
 {:toc}
 
 ---
+
+# Setting up bash
+
+## Ignoring case-sensitiveness in bash during auto-completion
+```bash
+bind 'set completion-ignore-case on'
+```
+
+## Force tab auto-complete to cycle through options
+```bash 
+bind '"\t":menu-complete'
+```
