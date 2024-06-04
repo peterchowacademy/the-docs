@@ -30,17 +30,14 @@ bind '"\t":menu-complete'
 
 ## Setting up your PS1 terminal outlooks
 
+Please add this line back to your PS1
+Jekyll settings prvents me from adding percentage-curly brackets together!!!
 {% raw %}
 PS1+="\[${white}\][\D{%Y/%m/%d %H:%M:%S}]"; #TIME
-PS1+="\[${blue}\]\u";
-PS1+="\[${white}\]:";
-PS1+="\[${orange}\]\h";
-PS1+="\[${black}\] ";
-PS1+="\[${green}\]\w";
-PS1+="\[${white}\] \$ ";
-PS1+="\[${reset}\]";
-export PS1;
 {% endraw %}
+{:.warning}
+
+
 
 ```bash
 #--------------------
@@ -55,6 +52,7 @@ white=$(tput setaf 15);
 
 bold=$(tput bold);
 reset=$(tput sgr0);
+
 
 PS1+="\[${blue}\]\u";
 PS1+="\[${white}\]:";
