@@ -43,7 +43,6 @@ white=$(tput setaf 15);
 bold=$(tput bold);
 reset=$(tput sgr0);
 
-PS1+="\[${white}\][\D{{% raw %}%Y/%m/%d %H:%M:%S{% endraw %}}]";  #TIME
 PS1+="\[${blue}\]\u";
 PS1+="\[${white}\]:";
 PS1+="\[${orange}\]\h";
