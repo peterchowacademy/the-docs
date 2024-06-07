@@ -61,7 +61,9 @@ Database: A document that is integrated with Notion API
 - Project type/ Build automation tool: Maven (repository)
 - Language: Java
 - Spring boot version: 3.3.0
-Project metadata
+
+Project metadata:
+
 - Group (usually company domain):com.edamame
 - Artifact(usually company project name): notion
 - Name: swag
@@ -69,7 +71,10 @@ Project metadata
 - Package name: default is com.edamame.notion 
 - Packaging type: jar
 - Java version: 22
+
+
 Dependencies:
+
 - Lombok: Helps to reduce writing boilerplate code
 - Spring Web: Building RESTful apc with MVC
 - Spring Configuration Processor: Able to custom configing keys
