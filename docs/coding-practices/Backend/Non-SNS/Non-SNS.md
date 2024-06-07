@@ -56,8 +56,8 @@ Database: A document that is integrated with Notion API
 - Spring is mainly for building webapps vs Springboot is mainly for building REST APIs
 
 ## Setup up using [Spring Initializr](https://start.spring.io) and basic config setup
-1. Head over to [Spring Initializr](https://start.spring.io)
-2. Make sure you have the following specs:
+1.Head over to [Spring Initializr](https://start.spring.io)
+2.Make sure you have the following specs:
 - Project type/ Build automation tool: Maven (repository)
 - Language: Java
 - Spring boot version: 3.3.0
@@ -80,11 +80,11 @@ Dependencies:
 - Spring Configuration Processor: Able to custom configing keys
 - Spring Data JPA: Persisting data wuth Java persistence API w/ Spring Data & Hibernate 
 
-3. Unzip the generated zip, put everything into the local dirs try running `mvn clean install -Dmaven.test.skip=true`to ensure a correct build and commit to github
+3.Unzip the generated zip, put everything into the local dirs try running `mvn clean install -Dmaven.test.skip=true`to ensure a correct build and commit to github
 
 If you have not setup Maven locally yet, please refer to this [guide](/docs/coding-practices/Terminal/My-attempts-and-notes/My-attempts-and-notes.md) and find Setting up maven
 
-4. Download 2 extensions
+4.Download 2 extensions
 - Extension Pack for Java
 - Spring Boot Extension Pack
 
@@ -92,7 +92,7 @@ Enable Null annotation type
 
 Setting -> Workspace -> Check (Editor: format On Save)
 
-5. Add a dir under .../notion (same level as your Application.java)
+5.Add a dir under .../notion (same level as your Application.java)
 and add a file `NotionConfigProperties.java`
 
 Add in String params
@@ -116,7 +116,7 @@ public record NotionConfigProperties(String apiUrl, String apiVersion, String au
 
 Run `mvn clean install -Dmaven.test.skip=true`to build the project once and then you will be able to access the params in applcaition.properties
 
-6. Head back to the Application.java
+6.Head back to the Application.java
 add in the annotation
 
 This is our **Main Method File**
@@ -142,12 +142,12 @@ public class SwagApplication {
 
 ```
 
-7. Add a new file `secrets.properties` next to application.properties
+7.Add a new file `secrets.properties` next to application.properties
 ```java
 notion.auth-token=
 ```
 
-8. Update your application.properties into the following:
+8.Update your application.properties into the following:
 
 ```java
 spring.application.name=swag
@@ -164,7 +164,7 @@ notion.database-id=5fe3f5c9-4740-495b-9d25-e204077b9d00
 secrets.properties
 ```
 
-10. Also please set up the final folder structure
+10.Also please set up the final folder structure
 
 src/main/java/com/aaa/bbb
 ------------------------------
