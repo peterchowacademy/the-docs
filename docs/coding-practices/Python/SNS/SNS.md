@@ -15,6 +15,48 @@ grand_parent: Coding Practices
 {:toc}
 
 ---
+# List
+## List Comprehension
+
+# Walrus Operator (:=) ([From Youtube by Indently](https://www.youtube.com/watch?v=MEMDi9mTCiU))
+Walrus Operator assign values to variables as part of a larger expression (aka: assign block scope variable)
+
+Example 1: Reducing extra line of code
+```python
+
+def analyze_text(text:str) -> dict:
+    # The returned dictionary is as follows
+    details: dict = {
+        # Walrus operator basically reduces the need to write an extra line of 
+        #words = text.split()
+        'words': (words := text.split()), 
+        'amount': len(words)
+        'chars': len(''.join(words))
+    }
+    return details
+```
+
+Example 2: Same as Example 1, reduces extra line of code
+```python
+if (text := len(user_input)) > 5:
+    print(text, "thumbs up!")
+else:
+    print(text, "thumbs down")
+
+```
+
+Example 3: Combining Example 1 and 2, reduces extra line of code
+```python
+def get_value():
+    return 'value'
+
+# So this statement  var = get_value() is no longer needed
+if var := get_value():
+    print(var)
+else:
+    print('No value')
+
+```
 
 # Dunder Methods (from Youtube by Indently)
 ## 5 useful dunder methods (aka magic methods) ```__eq__``` ```__format__``` ```__or__``` ```__repr__``` ```__getitem__``` 
