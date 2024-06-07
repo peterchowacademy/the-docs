@@ -64,3 +64,13 @@ Database: A document that is integrated with Notion API
 - Project metadata
     - Group:
     - Artifact:
+    - Name:
+    - Description:
+    - Package name:
+    - Packaging type: jar
+    - Java version: 22
+- Dependencies:
+    - Lombok: Helps to reduce writing boilerplate code
+    - Spring Web: Building RESTful apc with MVC
+    - Spring Configuration Processor: Able to custom configing keys
+    - Spring Data JPA: Persisting data wuth Java persistence API w/ Spring Data & Hibernate 
