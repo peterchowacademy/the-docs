@@ -51,5 +51,16 @@ Database: A document that is integrated with Notion API
 - Controller: The bridge brween Model & View
 
 2. Springboot was released in 2014 as an improvement from Spring
-- Spring packages in .war and tomcat server was a seperate entity (Springboot is integrated)
-- 
+- Spring packages in .war and tomcat/ Jetty server was a seperate entity (Springboot is integrated)
+- Springboot offers auto-configuration (aka no need to set up xml)
+- Spring is mainly for building webapps vs Springboot is mainly for building REST APIs
+
+## Setup up [Spring Initializr](https://start.spring.io)
+1. Head over to [Spring Initializr](https://start.spring.io)
+2. Make sure you have the following specs:
+- Project type/ Build automation tool: Maven
+- Language: Java
+- Spring boot version: 3.3.0
+- Project metadata
+    - Group:
+    - Artifact:
