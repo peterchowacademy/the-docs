@@ -61,19 +61,19 @@ Database: A document that is integrated with Notion API
 - Project type/ Build automation tool: Maven (repository)
 - Language: Java
 - Spring boot version: 3.3.0
-- Project metadata
-    - Group (usually company domain):com.edamame
-    - Artifact(usually company project name): notion
-    - Name: swag
-    - Description: `Spring Boot Project for setting up RESTApi for notion deployed through github pages`
-    - Package name: default is com.edamame.notion 
-    - Packaging type: jar
-    - Java version: 22
-- Dependencies:
-    - Lombok: Helps to reduce writing boilerplate code
-    - Spring Web: Building RESTful apc with MVC
-    - Spring Configuration Processor: Able to custom configing keys
-    - Spring Data JPA: Persisting data wuth Java persistence API w/ Spring Data & Hibernate 
+Project metadata
+- Group (usually company domain):com.edamame
+- Artifact(usually company project name): notion
+- Name: swag
+- Description: `Spring Boot Project for setting up RESTApi for notion deployed through github pages`
+- Package name: default is com.edamame.notion 
+- Packaging type: jar
+- Java version: 22
+Dependencies:
+- Lombok: Helps to reduce writing boilerplate code
+- Spring Web: Building RESTful apc with MVC
+- Spring Configuration Processor: Able to custom configing keys
+- Spring Data JPA: Persisting data wuth Java persistence API w/ Spring Data & Hibernate 
 
 3. Unzip the generated zip, put everything into the local dirs try running `mvn clean install -Dmaven.test.skip=true`to ensure a correct build and commit to github
 
@@ -162,6 +162,7 @@ secrets.properties
 10. Also please set up the final folder structure
 
 src/main/java/com/aaa/bbb
+------------------------------
 |
 |-- controller/
 |-- model/
