@@ -58,15 +58,15 @@ Database: A document that is integrated with Notion API
 ## Setup up using [Spring Initializr](https://start.spring.io)
 1. Head over to [Spring Initializr](https://start.spring.io)
 2. Make sure you have the following specs:
-- Project type/ Build automation tool: Maven
+- Project type/ Build automation tool: Maven (repository)
 - Language: Java
 - Spring boot version: 3.3.0
 - Project metadata
-    - Group:
-    - Artifact:
-    - Name:
-    - Description:
-    - Package name:
+    - Group (usually company domain):com.edamame
+    - Artifact(usually company project name): notion
+    - Name: swag
+    - Description: `Spring Boot Project for setting up RESTApi for notion deployed through github pages`
+    - Package name: default is com.edamame.notion 
     - Packaging type: jar
     - Java version: 22
 - Dependencies:
@@ -74,3 +74,8 @@ Database: A document that is integrated with Notion API
     - Spring Web: Building RESTful apc with MVC
     - Spring Configuration Processor: Able to custom configing keys
     - Spring Data JPA: Persisting data wuth Java persistence API w/ Spring Data & Hibernate 
+
+3. Unzip the generated zip, put everything into the local dirs try running `mvn clean install -Dmaven.test.skip=true`and commit to github
+
+If you have not setup Maven locally yet, please refer to this [guide](/docs/coding-practices/Terminal/My-attempts-and-notes/My-attempts-and-notes.md) and find Setting up maven
+

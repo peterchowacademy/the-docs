@@ -15,5 +15,6 @@ grand_parent: Coding Practices
 
 ---
 
-# 1. SAMPLE
-## SUB-SECTION
+# Setting up
+## Setting up maven
+1. 
