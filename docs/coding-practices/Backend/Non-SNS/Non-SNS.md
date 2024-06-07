@@ -19,7 +19,7 @@ grand_parent: Coding Practices
 # Setting up DB (i.e. Notion)
 
 ## Terminologies
-Page: refers to row entries, collapsable and able to have children
+Page: refers to row entries, collapsable and able to have children <br/>
 Database: A document that is integrated with Notion API
 
 ## Set up procedures
@@ -34,7 +34,7 @@ Database: A document that is integrated with Notion API
 ## Set up procedures
 1. Sign up [Postman](https://www.postman.com/downloads/) account
 2. Fork online Notion API or write your own postman endpoints
-3. Basics: Header(s) -> Key=Authorization -> Value=secret_xxxxxxxxxxx (**Internal Integration secret**)
+3. Basics: Header(s) -> Key=Authorization -> Value=secret_xxxxxxxxxxx <br/> (**Internal Integration secret**)
 4. Where to find database id ? Ans: 
 5. Where to find page id ? Ans:
 
@@ -55,7 +55,7 @@ Database: A document that is integrated with Notion API
 - Springboot offers auto-configuration (aka no need to set up xml)
 - Spring is mainly for building webapps vs Springboot is mainly for building REST APIs
 
-## Setup up [Spring Initializr](https://start.spring.io)
+## Setup up using [Spring Initializr](https://start.spring.io)
 1. Head over to [Spring Initializr](https://start.spring.io)
 2. Make sure you have the following specs:
 - Project type/ Build automation tool: Maven
