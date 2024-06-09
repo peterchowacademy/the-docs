@@ -39,8 +39,11 @@ Database: A document that is integrated with Notion API
 5. Where to find page id ? Ans:
 
 ## Common endpoint offered by NotionAPI
-1. Get Page/Row Entries by Page id
-- 
+1. GET one Page/Row Entry by Page id
+In the form : `https://api.notion.com/v1/pages/:id`
+Must have headers: **2 in total** (Authorization & Notion-version=2022-02-22)
+
+2. ADD/ POST one
 
 # Setup and using Springboot
 
