@@ -152,7 +152,7 @@ notion.auth-token=
 
 8.Update your application.properties into the following:
 
-```java
+```txt
 spring.application.name=swag
 spring.config.import=optional:secrets.properties
 notion.api-version=2022-02-22
@@ -169,8 +169,8 @@ secrets.properties
 
 10.Also please set up the final folder structure
 
+```bash
 src/main/java/com/aaa/bbb
-------------------------------
 |
 |-- controller/
 |-- model/
@@ -180,5 +180,439 @@ src/main/java/com/aaa/bbb
     |--- model/
     |--- service/
     |--- SwagApplication.java
+```
 
+
+## Setting up <del>swagger2</del> OpenAPI 3.0
+
+(This is due to Swagger2 doesn't work on Springboot 3.x.x applications!)
+{:.warning}
+
+0. I installed XML Red Hat VSCode extension to auto-format 
+
+1. Add the following deps into `pom.xml`
+
+```xml
+<dependency>
+    <groupId>org.springdoc</groupId>
+    <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+    <version>2.5.0</version>
+</dependency>
+```
+
+2. Create 2 files under edamame/notion/noition/model <br/>
+`Database.java` and `Page.java`
+
+Database.java
+```java
+
+
+// This model is what the database looks like after postman
+
+package com.edamame.notion.notion.model;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+public class Database {
+    private String object;
+
+    @JsonProperty
+    private List<Page> pages = new ArrayList<>();
+
+    @JsonProperty("next_cursor")
+    private Boolean nextCursor;
+
+    @JsonProperty("has_more")
+    private Boolean hasMore;
+
+    public String getObject() {
+        return object;
+    }
+
+    public void setObject(String object) {
+        this.object = object;
+    }
+
+    public List<Page> getPages() {
+        return pages;
+    }
+
+    public void setPages(List<Page> pages) {
+        this.pages = pages;
+    }
+
+    public Boolean getNextCursor() {
+        return nextCursor;
+    }
+
+    public void setNextCursor(Boolean nextCursor) {
+        this.nextCursor = nextCursor;
+    }
+
+    public Boolean getHasMore() {
+        return hasMore;
+    }
+
+    public void setHasMore(Boolean hasMore) {
+        this.hasMore = hasMore;
+    }
+
+    @Override
+    public String toString() {
+        return "Database{" +
+                "object='" + object + '\'' +
+                ", pages=" + pages +
+                ", nextCursor=" + nextCursor +
+                ", hasMore=" + hasMore +
+                '}';
+    }
+
+}
+
+```
+
+Page.java
+```java
+package com.edamame.notion.notion.model;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.databind.JsonNode;
+
+import java.time.LocalDateTime;
+
+/*
+ * "object": "page",
+ * "id": "string",
+ *  ...
+ * 
+ */
+
+public class Page {
+
+    private String object;
+    private String id;
+    @JsonProperty("created_time")
+    private LocalDateTime createdTime;
+    @JsonProperty("last_edited_time")
+    private LocalDateTime lastEditedTime;
+    private String cover;
+    private String icon;
+    private boolean archived;
+    private String url;
+    private JsonNode properties; // Is a dynamic list/ Dynamic json node
+
+    public String getObject() {
+        return object;
+    }
+
+    public void setObject(String object) {
+        this.object = object;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public LocalDateTime getCreatedTime() {
+        return createdTime;
+    }
+
+    public void setCreatedTime(LocalDateTime createdTime) {
+        this.createdTime = createdTime;
+    }
+
+    public LocalDateTime getLastEditedTime() {
+        return lastEditedTime;
+    }
+
+    public void setLastEditedTime(LocalDateTime lastEditedTime) {
+        this.lastEditedTime = lastEditedTime;
+    }
+
+    public String getCover() {
+        return cover;
+    }
+
+    public void setCover(String cover) {
+        this.cover = cover;
+    }
+
+    public String getIcon() {
+        return icon;
+    }
+
+    public void setIcon(String icon) {
+        this.icon = icon;
+    }
+
+    public boolean isArchived() {
+        return archived;
+    }
+
+    public void setArchived(boolean archived) {
+        this.archived = archived;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
+
+    public JsonNode getProperties() {
+        return properties;
+    }
+
+    public void setProperties(JsonNode properties) {
+        this.properties = properties;
+    }
+
+    @Override
+    public String toString() {
+        return "Page{" +
+                "object='" + object + '\'' +
+                ", id='" + id + '\'' +
+                ", createdTime=" + createdTime +
+                ", lastEditedTime=" + lastEditedTime +
+                ", cover='" + cover + '\'' +
+                ", icon='" + icon + '\'' +
+                ", archived=" + archived +
+                ", url='" + url + '\'' +
+                ", properties=" + properties +
+                '}';
+    }
+}
+
+```
+
+3. Then create a database service under /service
+
+This service talks to the notionAPI and get the pages back <br/>
+Some tips to follow, use log, use Constructor injection to get NotionConfigProperties into DatabaseService <br/>
+`this.xxx = xxx` is also known as using construction arguemnts <br/>
+The use of RestTemplates is to call the notion API!
+
+
+```java
+// This talks to the notion API and gets the pages back
+
+package com.edamame.notion.notion.service;
+
+import java.util.List;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpMethod;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.client.RestTemplate;
+
+import com.edamame.notion.notion.config.NotionConfigProperties;
+import com.edamame.notion.notion.model.Database;
+import com.edamame.notion.notion.model.Page;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class DatabaseService {
+
+    private final RestTemplate restTemplate;
+    private final NotionConfigProperties notionConfigProps;
+    private final Logger log = LoggerFactory.getLogger(DatabaseService.class);
+
+    public DatabaseService(RestTemplate restTemplate, NotionConfigProperties notionConfigProps) {
+        this.restTemplate = restTemplate;
+        this.notionConfigProps = notionConfigProps;
+    }
+
+    public List<Page> query(String databaseId) {
+        String url = notionConfigProps.apiUrl() + "/v1/databases/" + databaseId + "/query";
+        log.info("Querying Notion database: {}", url);
+        ResponseEntity<Database> db = restTemplate.exchange(
+                url,
+                HttpMethod.POST,
+                new HttpEntity<>(getDefaultHeaders()),
+                Database.class);
+
+        return db.getBody().getPages();
+    }
+
+    private HttpHeaders getDefaultHeaders() {
+        HttpHeaders headers = new HttpHeaders();
+        headers.set("Content-Type", "application/json");
+        headers.set("Notion-Version", notionConfigProps.apiVersion());
+        headers.set("Authorization", notionConfigProps.authToken());
+        return headers;
+    }
+}
+
+```  
+4. I also added a new NotionConfig.java under /config
+
+```java
+package com.edamame.notion.notion.config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.client.RestTemplate;
+
+// Adding a new class for all notion configurations
+@Configuration
+public class NotionConfig {
+
+    @Bean
+    public RestTemplate restTemplate() {
+        return new RestTemplate();
+    } // This will now be made abaliable for dependency injection
+}
+
+
+```
+
+5. Add a NotionClient under `.../.../notion/notion`
+```java
+package com.edamame.notion.notion;
+
+import org.springframework.stereotype.Component;
+
+import com.edamame.notion.notion.service.DatabaseService;
+
+// This is mimicking what the javascript is doing
+
+@Component
+public class NotionClient {
+    // get instance of the database service
+
+    public final DatabaseService databases;
+
+    // Add constructor parameter, to let user to call like cleint.databases.query()
+    public NotionClient(DatabaseService databases) {
+        this.databases = databases;
+    }
+
+}
+
+
+```
+
+## Moving onto another package: controller and model
+
+1. We call it the `SwagController.java` under controller
+
+```java
+
+package com.edamame.notion.controller;
+
+import org.springframework.web.bind.annotation.RestController;
+
+import com.edamame.notion.model.Swag;
+import com.edamame.notion.notion.NotionClient;
+import com.edamame.notion.notion.config.NotionConfigProperties;
+import com.edamame.notion.notion.model.Page;
+import com.edamame.notion.service.SwagService;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import java.util.List;
+
+import org.springframework.web.bind.annotation.GetMapping;
+
+@RestController
+@RequestMapping("/api")
+
+public class SwagController {
+
+    private final NotionClient client;
+    private final NotionConfigProperties notionConfigProperties;
+
+    public SwagController(NotionClient client, NotionConfigProperties notionConfigProperties) {
+        this.client = client;
+        this.notionConfigProperties = notionConfigProperties;
+    }
+
+    @GetMapping("/")
+    public String home() {
+        return "Welcome to the API!";
+    }
+
+    @GetMapping("path")
+    public List<Swag> finalAll() {
+        List<Page> pages = client.databases.query(notionConfigProperties.databaseId());
+
+        return pages.stream().map(SwagService::mapPageToTalk).toList();
+    }
+
+}
+
+// New object: To get the list of Swags back
+// 1st thing: need notionClient and with that, we need a construction parameter
+
+
+// New object: To get the list of Swags back
+
+```
+
+2. Then we add another package: model
+
+We call this file `Swag.java`
+
+```java
+package com.edamame.notion.model;
+
+import java.time.LocalDateTime;
+
+
+// We're matching these to our database entries from notion
+public record Swag( String id, String title, LocalDateTime startDate, LocalDateTime endDate, String url, String recording){
+
+}
+
+
+```
+
+4. Added `SwagService.java`
+
+However, please note that the `page.xxx` is not at all correct since this configuration was based on the old notion API fields.
+
+I have to study in depth to figure out the response difference!
+
+```java
+package com.edamame.notion.service;
+
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
+import org.springframework.stereotype.Service;
+
+import com.edamame.notion.model.Swag;
+import com.edamame.notion.notion.model.Page;
+
+@Service
+public class SwagService {
+
+    public static Swag mapPageToTalk(Page page) {
+        return new Swag(
+                page.getId(),
+                page.getProperties().get("Title").get("title").get(0).get("text").get("content").asText(),
+                LocalDateTime.parse(page.getProperties().get("StartDate").get("date").get("start").asText(),
+                        DateTimeFormatter.ISO_OFFSET_DATE_TIME),
+                LocalDateTime.parse(page.getProperties().get("EndDate").get("date").get("start").asText(),
+                        DateTimeFormatter.ISO_OFFSET_DATE_TIME),
+                page.getProperties().get("URL").get("url").asText(),
+                page.getProperties().get("Recording").get("url").asText());
+    }
+
+}
+
+```
 
