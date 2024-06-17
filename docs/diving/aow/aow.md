@@ -1,5 +1,5 @@
 ---
-title: aow (Advanced Open Water Diving)
+title: aow
 layout: default
 parent: diving
 has_children: true
