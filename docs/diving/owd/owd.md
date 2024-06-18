@@ -25,3 +25,15 @@ Facts 1:
 
 ### Eqaulizing pressure
 
+Equalizing mask = blow air from nose to mask
+if failed, will cause nose and eye surrounding to swell up
+
+If equalizing fails:
+- try ascend until pain goes away then equalize and dive again
+
+{:.warning}
+> Do not dive under medication, during fever or having an allergy attack. Since all listed illness lead to nasil inflammation, more blockage for normal airflow and makes equalizing harder
+
+{:.warning}
+> Do NOT dive with everyday earplugs, it could lead to uneqaulizable situations
+
