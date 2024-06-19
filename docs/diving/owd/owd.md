@@ -37,3 +37,16 @@ If equalizing fails:
 {:.warning}
 > Do NOT dive with everyday earplugs, it could lead to uneqaulizable situations
 
+{:.warning}
+> It's rare but diving might cause teeth patched gaps discomforts
+> The same discomfort may also happen to your **wet suit** mid dive due to the air between your body and the suit
+
+Q: What happens to your lungs during a dive?
+Ans: Your lung collapases with pressure and with depth.
+
+Note:
+- You dont need to equalize your lungs since lungs have a high volume
+- The only danger only arise in 2 scenarios
+    - 1: You exhale completely and begin your dive
+    - 2: You hold your breathe & dive to 60m +  
+
