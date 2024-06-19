@@ -49,4 +49,19 @@ Note:
 - The only danger only arise in 2 scenarios
     - 1: You exhale completely and begin your dive
     - 2: You hold your breathe & dive to 60m +  
+- You don't typically equalize during ascend due to pressure from your inards to outards is a natural human process
 
+### Dos and Don't
+
+1. NEVER hold your breath during a dive
+- Say you hold your breath and ascend, your lungs over-expand and could lead to rupture. Causing air to enter your chest cavity and bloodstream and results in paralysis or depth
+
+2. DON'T dive when your lung is inflammed, due to the air trapped in lungs will over-expand
+
+3. DON'T dive during a flu, after flu med, your bloodflow increases and adds more internal pressure to your body and ends up in your ears or nasal cavity.
+
+4. DON'T dive after eating food that produces a lot of gas! During ascend, ga expand = cauing discomfort
+
+### Breathing and buoyancy
+
+1. 
