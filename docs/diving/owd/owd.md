@@ -64,4 +64,9 @@ Note:
 
 ### Breathing and buoyancy
 
-1. 
+
+1. Diving depth increases = pressure increase = gas task volumn decrease = gas intake increase
+    - This results in higer gas consumption in deeper areas
+    - Since deeper you dive, the closer gas molecules are together, makes it harder to breath and you breath more as a result
+
+2. 
