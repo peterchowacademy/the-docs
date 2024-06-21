@@ -43,6 +43,8 @@ has_children: true
 
 ### Caution when using Nitrox
 - 1. Mark non-nitrox and nitrox tanks seperately!
-- 2. 
+
+
+## Nitrox class
 
 
