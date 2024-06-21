@@ -18,7 +18,7 @@ has_children: true
 
 ### Benefits of using Nitrox
 - Extending allowable bottom time (added no stop time in repeated dives)
-- Reducing the need to suck in more air when near no decompression limit 
+- Reducing the need to suck in more air when near no decompression limit (Reducing N2 affect)
 - Reduce overall N2 load during multiple dives
 
 | Depth (meters)   |No decompression limit time(Air)   | No decompression limit time (EANx32)   |No decompression limit time (EANx36) |
@@ -47,4 +47,51 @@ has_children: true
 
 ## Nitrox class
 
+### Nitrox license pros and cons:
+
+pros:
+- longer no decompression limit (NDL)
+- longer and deeper dives
+- N2 sickness
+- can replace emergency O2 
+- Feels better
+
+limit for nitrox: 
+- N2 saturation
+- ran out of gas
+
+cons:
+- Oxygen posioning
+- Fire hazard
+- More expansive
+- rest time higher
+- Storage fee
+- Maintance fee (eqipment)
+
+### Causes for NDL
+- Fast ascend
+- Over NDL time
+
+Gas necrosis: includes both N2 and O2
+- Whereas the canto version only includes Nitrogen
+- will lower ciritcal thinking
+
+### Shit diving watch
+- Taiwan Atom mission 1 = no warning for NDL
+
+### Nitrox eqipments
+High O2 environment = more oxidization
+- Green O ring
+- Yellow bottle, green-yellow sticker 
+- oxygen clean service sticker (NEVER SEEN)
+- Enriched Air filled data sticker from PADI (NEVER SEEN) : Typically, just a normal sticker with marker
+- Black and white strips at the top
+
+- PADI Tec Gas Blender license 
+
+### Nitrox percentage
+- 32% (More common)
+- 36%
+
+### Oxygen exposure
 
