@@ -55,6 +55,7 @@ pros:
 - N2 sickness
 - can replace emergency O2 
 - Feels better
+- Shorter surface interval
 
 limit for nitrox: 
 - N2 saturation
@@ -67,6 +68,7 @@ cons:
 - rest time higher
 - Storage fee
 - Maintance fee (eqipment)
+- More annoying (set watch, fill in air full log)
 
 ### Causes for NDL
 - Fast ascend
@@ -134,4 +136,40 @@ Please contact your buddy and perform a normal ascend
     - divers name
     - diver's signiture 
 - Tuner (set oxygen percentage first), blow the nitrox to the o-ring and try = analysis done
+
+### CR-5L dive watch
+Menu > settings > set dive > scbua > set gas
+
+
+### Dive Watch setting (Use of tecnology)
+1. Gas necrosis
+2. Dive within the limit of dive watch
+3. Every dive should have their own dive watch, due to different concentration of nitrox
+4. Execute safety stop as usual
+
+4 off 5 in for nitrox percentage
+
+During live aboard (on ship)
+- Still need to adjust your dive watch
+- Becareful: Since it might default back to 21% (normal air) while some might withhold for 12 hours
+
+{:.warning}
+> Backup watch:
+> Only counts if you dive with it and adjusted it before the dive
+
+
+The majority of dive watches can use both nitrox and air
+
+### Safety Factor 
++1 more conservative
++2 Extremely conservative
+
+### Oxygen given during an accident
+- pure oxygen / high nitrox can help with DCI
+- Do CPR (when there's no breathing)
+- call EMS
+- Hold regulator and ascend safely
+
+
+
 
