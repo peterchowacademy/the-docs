@@ -95,3 +95,43 @@ High O2 environment = more oxidization
 
 ### Oxygen exposure
 
+In different pressure, different performence of gases
+
+PO2 and pp (They're the same)
+1 bar *0.21 = 0.21 pp (in normal pressure)
+
+We cannot exceed 1.4 and 1.6
+- 1.4 ata/bar = no chance of O2 positioning, the risk occurs after 1.4
+- 1.6 ata/bar = potentially O2 posioning
+- after 1.6 ata/bar = definately Oxygen posioning
+
+### Oxygen posioning
+- CNS posioning (immdiately)
+    - Will lead to seizures (in the face), regulator gets loose and suffocate and die
+-  Symptoms (6 of them):
+    - tunnel vision
+    - seizure
+    - anxiety
+    - dizzyness
+    - ear blaring
+    - tendency to vomit
+
+Please contact your buddy and perform a normal ascend
+
+### Control O2 exposure
+- Set computer and dive within limit
+- Know your pp/ po2 limit
+
+### O2 analysis form (Enriched Air Fill log)
+- Must be filled every dive
+    - Cylinder number (around the rim, but there's usually another common number written by the dive shop)
+    - date where diver receives container
+    - dive shop name/ dive operation
+    - oxygen analysis (final nitrox percentage)
+    - blender's name 
+    - Max depth @ 1.4 
+    - cylinder pressure
+    - divers name
+    - diver's signiture 
+- Tuner (set oxygen percentage first), blow the nitrox to the o-ring and try = analysis done
+
