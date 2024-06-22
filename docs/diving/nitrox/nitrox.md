@@ -42,10 +42,12 @@ has_children: true
 - In Europe: Standard requires special valve and regulators for eqipments such as the M26x2 
 
 ### Caution when using Nitrox
-- 1. Mark non-nitrox and nitrox tanks seperately!
+- 1. Mark non-nitrox and nitrox tanks seperately, so no one confuses it!
+- 2. Partial pressure blening = pure O2 + O2 compatible air. This casues the inards of the the cylinder and cylinder valve be in contact of pure O2. O-rings, gaskets, valve materials must be O2 compatible
+- 3. Mixing/ blending methods: premix or membrane methods
 
 
-## Nitrox class
+# Nitrox class at kln bay
 
 ### Nitrox license pros and cons:
 
@@ -126,14 +128,14 @@ Please contact your buddy and perform a normal ascend
 
 ### O2 analysis form (Enriched Air Fill log)
 - Must be filled every dive
-    - Tank Cylinder number (around the rim, but there's usually another common number written by the dive shop (usually in 1 or 2 digits))
+    - Tank serial number (around the rim, but there's usually another common number written by the dive shop (usually in 1 or 2 digits))
     - date where diver receives container 
     - dive shop name/ dive operation
-    - oxygen analysis (final nitrox percentage)
+    - oxygen analysis (final O2 percentage in nitrox) 
     - blender's name 
     - Max depth @ 1.4 
-    - cylinder pressure
-    - divers name
+    - cylinder pressure (bar/mpa/psi)
+    - divers name, enriched air certification and number
     - diver's signiture 
 - Tuner (set oxygen percentage first), blow the nitrox to the o-ring and try = analysis done
 
@@ -170,7 +172,7 @@ The majority of dive watches can use both nitrox and air
 - call EMS
 - Hold regulator and ascend safely
 
-### pp/ PO2 table vs depth
+### ata pp/ PO2 table vs depth (or bar)
 
 | Pressure (bar) | Depth (meters)   | 21% O2 (AIR) | 40% O2|36% O2| 35% O2| 32% O2 |
 | -------- | -------- | ------- | ------- | ------- | ------- | ------- | 
