@@ -126,8 +126,8 @@ Please contact your buddy and perform a normal ascend
 
 ### O2 analysis form (Enriched Air Fill log)
 - Must be filled every dive
-    - Cylinder number (around the rim, but there's usually another common number written by the dive shop)
-    - date where diver receives container
+    - Tank Cylinder number (around the rim, but there's usually another common number written by the dive shop (usually in 1 or 2 digits))
+    - date where diver receives container 
     - dive shop name/ dive operation
     - oxygen analysis (final nitrox percentage)
     - blender's name 
@@ -164,11 +164,26 @@ The majority of dive watches can use both nitrox and air
 +1 more conservative
 +2 Extremely conservative
 
-### Oxygen given during an accident
+### Amount of oxygen given during an accident
 - pure oxygen / high nitrox can help with DCI
 - Do CPR (when there's no breathing)
 - call EMS
 - Hold regulator and ascend safely
+
+### pp/ PO2 table vs depth
+
+| Pressure (bar) | Depth (meters)   | 21% O2 (AIR) | 40% O2|36% O2| 35% O2| 32% O2 |
+| -------- | -------- | ------- | ------- | ------- | ------- | ------- | 
+| 1 bar | 0m / on-land   |  0.21pp   |   0.40pp    |  0.36pp    |  0.35pp    |  0.32pp    | 
+| 2 bar | 10m | 0.42pp   |  0.80pp    | 0.72pp    | 0.70pp    | 0.64pp    | 
+| 3 bar | 20m | 0.63pp   |  1.20pp    |  1.08pp    | 1.05pp   |  0.96pp    |
+| 4 bar | 30m | 0.84pp   |  1.60pp    |  1.44pp    | 1.40pp   |  1.28pp    |
+| 5 bar | 40m | 1.05pp   |  2.00pp    |  1.80pp    | 1.75pp   |  1.60pp    |
+
+{:.warning}
+> pp = PO2 recommended maximum is 1.4 PO2 and the absolute 1.6 maximum is 1.6
+
+
 
 
 
