@@ -163,8 +163,8 @@ During live aboard (on ship)
 The majority of dive watches can use both nitrox and air
 
 ### Safety Factor 
-+1 more conservative
-+2 Extremely conservative
+- +1 more conservative
+- +2 Extremely conservative
 
 ### Amount of oxygen given during an accident
 - pure oxygen / high nitrox can help with DCI
