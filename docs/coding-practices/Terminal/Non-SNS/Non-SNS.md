@@ -77,3 +77,12 @@ Just type this into your terminal, no need to source
 ```bash
 git config --global user.email "your@email.com"
 ```
+
+# Setting up git sudo users (under sudoers)
+## /etc/sudoers.d
+1. sudo su 
+2. cd /etc/sudoers.d/
+3. CAT a sudo user (i.e. should be rtdev ALL=(ALL) NOPASSWD: ALL)
+4. vi new_sudo_user and add the information onto it
+5. `:x`
+
