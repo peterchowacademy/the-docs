@@ -14,3 +14,14 @@ grand_parent: Coding Practices
 {:toc}
 
 ---
+
+# Dunner variables
+## Using `if __name__ = "__main__"`
+
+- Running python file directly 
+```python
+print(__name__)
+# When running python file directly, __name__ is set to main
+```
+
+- Running python file via import
