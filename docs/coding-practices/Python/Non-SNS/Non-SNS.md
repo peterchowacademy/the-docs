@@ -55,16 +55,16 @@ fileA
 def do_something():
     print('doing something')
 
-do_something()
+do_something() # Prints doing something
 
-# Explained: When running python file directly, __name__ is set to main
+# Explained: When running python file directly with do_something(), it prints doing something
 ```
 
 fileB
 ```python
 from fileA import do_something # returns 1st print statement
 
-do_something() # This returns 2 print statments
+do_something() # This returns the 2nd print statments
 
-#Explained: Since fileB imported fileA, meaning fileA was ran once through fileB
+#Explained: Since fileB imported fileA, meaning fileA was ran once through fileB, then ran again
 ```
