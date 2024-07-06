@@ -23,7 +23,7 @@ grand_parent: Coding Practices
 > `__annotations__, __builtins__, __cached__, __doc__, __file__, __loader__, __name__, __package__, __spec__`
 {:.note}
 
-## Using `if __name__ = "__main__"`
+## Without using `if __name__ == "__main__"`
 
 - Running python file directly 
 ```python
@@ -48,7 +48,7 @@ import fileA # returns fileA
 #Explained: Since fileB imported fileA, meaning fileA was ran once through fileB
 ```
 
-- Running python file via import methods <br/>
+- Running python file via import methods without `if __name__ == "__main__"` <br/>
 
 fileA
 ```python
@@ -67,4 +67,27 @@ from fileA import do_something # returns 1st print statement
 do_something() # This returns the 2nd print statments
 
 #Explained: Since fileB imported fileA, meaning fileA was ran once through fileB, then ran again
+```
+
+## Using `if __name__ = "__main__"`
+
+fileA
+```python
+def do_something():
+    print('doing something')
+
+if __name__ == '__main__':
+    do_something() # Prints doing something
+
+# Explained: When running python file directly with do_something(), it prints doing something
+```
+
+fileB
+```python
+from fileA import do_something # returns nothing!
+# This is because do_something is invokes and it's not equal to __main__, it's equal to fileA, ergo, no print statements! 
+
+do_something() # This returns the 1st print statment!
+
+#Explained: 
 ```
