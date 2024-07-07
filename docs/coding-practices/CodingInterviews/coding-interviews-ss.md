@@ -56,11 +56,19 @@ Question: Capture spotify user habits
 
 Solution: 
 
-- First set all missing listening duration to 0
+- First set all missing listening duration to 0 (aka: replace NaN values -> 0)
 - set all exisiting listening duration to nearest min
+- groupby user_id and reset_index so it becomes the main column
 
 ``` python
 
+# Replace NaN values -> 0:
+listening_habits['listen_duration'].fillna(0,inplace=True)
+
+# groupby user_id
+listning_habits.groupby('user_id').agg(
+    total_listen_duration=()
+)
 
 '''
 Final returned Panda Series has NO column name
