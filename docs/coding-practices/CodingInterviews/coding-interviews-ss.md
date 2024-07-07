@@ -65,10 +65,15 @@ Solution:
 # Replace NaN values -> 0:
 listening_habits['listen_duration'].fillna(0,inplace=True)
 
-# groupby user_id
-listning_habits.groupby('user_id').agg(
-    total_listen_duration=()
-)
+# groupby user_id and set total_listen_duration from sec -> mins
+df = listning_habits.groupby('user_id').agg(
+    total_listen_duration=('listen_duration', 'sum'),
+    unique_song_count=('song_id', 'nunique')
+).reset_index()
+
+df['total_listen_duration'] = df['total_listen_duration'].apply(lambda x: round(x/60)
+
+df
 
 '''
 Final returned Panda Series has NO column name
