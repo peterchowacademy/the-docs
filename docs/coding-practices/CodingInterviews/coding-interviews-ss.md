@@ -4,7 +4,7 @@ layout: default
 parent: Coding Practices
 has_children: true
 ---
-# Non-SNS
+# Coding interview (StrataScratch)
 {: .no_toc }
 
 ## Table of contents
