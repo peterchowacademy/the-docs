@@ -188,6 +188,8 @@ When this theme is released, only the files in `_layouts`, `_includes`, and `_sa
 The theme is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
 
 [^2]: [It can take up to 10 minutes for changes to your site to publish after you push the changes to GitHub](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll#creating-your-site).
+fortunately for me, the cicd rendering takes no more than 2 mins.
+
 
 [Jekyll]: https://jekyllrb.com
 [Just the Docs Template]: https://just-the-docs.github.io/just-the-docs-template/
