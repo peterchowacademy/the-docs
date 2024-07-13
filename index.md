@@ -15,6 +15,8 @@ This website serves to help Milton Chow to better consolidate his notes from the
 
 > 其實都要寫幾多 Code ~ orz
 
+But I got this, cmon!
+
 
 ### Github Action Workflow CI:
 ![THIS BADGE IS AWESOME](https://github.com/edamame852/the-docs/actions/workflows/deploy.yml/badge.svg)
