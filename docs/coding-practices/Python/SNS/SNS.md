@@ -204,6 +204,9 @@ You're already using it lmao <br/>
 As long as they are not annotated as `@staticmethod` or `@classmethod`
 
 ## Usage of @staticmethod
+
+instance convention: `self` but could be something else :)
+
 ```python
 
 class Calculator:
@@ -232,3 +235,37 @@ TLDR:
     Calculator.get_calculator_info() #Throws TypeError execption, mission instance self, since missing 1 required position argument
     Calculator.add_all_nums(1,2,3) #This STILL works
     ```
+
+## Usage of @classmethod
+
+instance convention: `cls`
+
+```python
+from typing import Self
+
+class Calculator:
+    member_variable_counter = 0 # class member variable here !
+
+    def __init__(self, version:int, name:str):
+        self.version = version
+        self.name = name
+
+    def get_calculator_info(self):
+        return f'Welcome to calculator {self.name} on version {self.version}'
+
+    @classmethod 
+    def add_counter(cls):
+        return cls.member_variable_counter += 1
+
+    @classmethod
+    def get_counter(cls)
+        return f"This class was called {cls.member_variable_counter} time(s)"
+
+
+```
+
+@Classmethod is good when you have to alter, call class member variables !
+
+TLDR: 
+- classmethod bounds to and affects the actual class (cls)
+- staticmethod bounds to and affects the instance (self)
