@@ -196,7 +196,12 @@ if __name__ == '__main__':
     main()
 ```
 
-# Static Methods
+# Static Methods vs Class Methods vs Instance Methods
+
+## Usage of Instance Mehtods
+
+You're already using it lmao <br/>
+As long as they are not annotated as `@staticmethod` or `@classmethod`
 
 ## Usage of @staticmethod
 ```python
@@ -219,8 +224,8 @@ TLDR:
     - If we instanciate
     ```python 
     calc:Calculator = Calculator(version=1.0, name='First Calculator')
-    calc.get_calculator_info() #This works
-    calc.add_all_nums(1,2,3) #This also works
+    calc.get_calculator_info() #This works (An instance method)
+    calc.add_all_nums(1,2,3) #This also works (An instance method)
     ```
     - If we DO NOT instanciate -> *** TypeError! ***
     ```python 
