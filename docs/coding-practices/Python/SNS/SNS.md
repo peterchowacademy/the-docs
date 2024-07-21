@@ -195,3 +195,35 @@ def main() -> None:
 if __name__ == '__main__':
     main()
 ```
+
+# Static Methods
+
+## Usage of @staticmethod
+```python
+
+class Calculator:
+    def __init__(self, version:int, name:str):
+        self.version = version
+        self.name = name
+
+    def get_calculator_info(self):
+        return f'Welcome to calculator {self.name} on version {self.version}'
+
+    @staticmethod 
+    def add_all_nums(self, *numbers):
+        return sum(*numbers)
+```
+TLDR: 
+- `@staticmethod` is used only in classes!
+- `@staticmethod` indicates the method could be called without instanciation (of the class it was in)
+    - If we instanciate
+    ```python 
+    calc:Calculator = Calculator(version=1.0, name='First Calculator')
+    calc.get_calculator_info() #This works
+    calc.add_all_nums(1,2,3) #This also works
+    ```
+    - If we DO NOT instanciate -> *** TypeError! ***
+    ```python 
+    Calculator.get_calculator_info() #Throws TypeError execption, mission instance self, since missing 1 required position argument
+    Calculator.add_all_nums(1,2,3) #This STILL works
+    ```
