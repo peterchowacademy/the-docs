@@ -12,6 +12,8 @@ has_children: true
 
 ---
 
+
+
 # Things you should avoid when coding in C++!
 
 ## 1. `using namespace std;`
@@ -80,6 +82,26 @@ void print_range(int start, int end) {
 }
 ```
 
+# Basics
+
+## `&` the Reference operator
+` &data `: data is passed by reference
+
+`&` gurantees the function to modify the object directly
+- pass by reference benefit 1: Performence optimization due to no need to copy
+
+`&data` is a reference to a `std::vector<int>` that cannot be modified inside the function. Passing by reference avoids copying the entire vector when the function is called, which can be more efficient, especially for large vectors
+
+## `const` the const qualifier 
+TLDR: ensure the function cannot change the elements inside the vector
+
+## `auto` keyword
+TLDR: to automatically deduce the type of variable
+- Makes the function more generic
+- Any type take model takes up is acceptable
+- `auto` type inference benefit 1: Code is more flexible 
+- `auto` type inference benefit 2: Code is cleaner 
+
 
 ## 3. use a range based for-loop (avoid for-loop by index)
 
@@ -87,6 +109,7 @@ void print_range(int start, int end) {
 // DON'T do this :(
 #include xxx
 
+// Additional variable i is used, but not really needed
 void range_based_for_loop(const std::vector<int> &data, auto &model) {
    for (std::size_t i = 0; i < data.size(); ++i) {
     model.update(data[i]); // BAD, we don't care about idx here
@@ -98,8 +121,9 @@ void range_based_for_loop(const std::vector<int> &data, auto &model) {
 // DO this :)
 #include xxx
 
+// Iterates over the element without using index
 void range_based_for_loop(const std::vector<int> &data, auto &model) {
-   for (const auto &x: data) {
+   for (const auto &x: data) { // &x helps directly accessing original data or object to speed up manipulation
     model.update(x); // GOOD, no index = less room for error
    }
 }
