@@ -196,7 +196,7 @@ if __name__ == '__main__':
     main()
 ```
 
-# Static Methods vs Class Methods vs Instance Methods
+# Static Methods vs Class Methods vs Instance Methods vs Abstract Method
 
 ## Usage of Instance Mehtods
 
@@ -269,3 +269,22 @@ class Calculator:
 TLDR: 
 - classmethod bounds to and affects the actual class (cls)
 - staticmethod bounds to and affects the instance (self)
+
+## @abstractmethod
+
+```python
+from abc import ABC, abstractmethod
+
+class BaseClass(ABC):
+    def __init__(self):
+        pass
+    
+    @abstractmethod
+    def core_logic():
+        pass
+    
+    def run(self):
+        self.core_logic()
+
+```
+Here `@abstractmethod` incidates that who even inherits from BaseClass would have to implement the call logic themselves, also it's empty in the BaseClass, in the Child Class this method is to be properly implemented.
