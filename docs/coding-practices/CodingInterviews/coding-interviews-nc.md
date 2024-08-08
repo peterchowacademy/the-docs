@@ -73,16 +73,16 @@ Goal: Return k : int, the idx that will slice the original input up to a certain
 [0, 1, 3, 2, 3, 0, 4, 2]
 [0, 1, 3, 0, 3, 0, 4, 2]
 [0, 1, 3, 0, 4, 0, 4, 2]
-5
+Return solution: 5
 ```
 
 ```python
 class Solution:
     def removeElement(self, nums: List[int], val: int) -> int:
-        L = 0
-        for R in range(len(nums)):
-            if nums[R] != val:
-                nums[L] = nums[R]
-                L += 1
-        return L
+        L_idx = 0
+        for R_idx in range(len(nums)):
+            if nums[R_idx] != val:
+                nums[L_idx] = nums[R_idx]
+                L_idx += 1
+        return L_idx
 ```
