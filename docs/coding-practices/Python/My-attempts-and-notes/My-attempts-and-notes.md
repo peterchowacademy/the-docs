@@ -19,6 +19,22 @@ grand_parent: Coding Practices
 
 Tox is a venv managing tool that aims to integrate automative and standardize testing  
 
+You can follow this to setup your tox envs
+
+```ini
+[tox]
+envlist =
+    check_format
+
+[testenv]
+allowlist_externals = poetry
+skip_install = true
+deps=
+    poetry==1.8.3
+    poetry-dynamic-versioning[plugin]==1.2.0
+
+```
+
 # Python tips 
 
 ## Finding prime numbers in a list (slow vs quick) [@b001](https://www.youtube.com/shorts/g9fIWtSexLs)
