@@ -14,6 +14,52 @@ grand_parent: Coding Practices
 {:toc}
 
 ---
+# Setting up config/secret
+
+{:.note}
+This file is called `setup_config.py` and it's located in `src/utils/setup_config.py`
+
+```python
+
+import configparser
+import os
+
+def set_up_config():
+    config = configparser.ConfigParser()
+    config_base_path = os.path.abspath(os.getcwd())
+
+    if "abc" == config_base_path.split("/")[-1]:
+        rest_of_config_path = "/config/config.ini"
+    if "ABC" == config_base_path.split("/")[-1]:
+        rest_of_config_path = "/abc/config/config.ini"
+
+    config_result = config.read(f'{config_base_path}{rest_of_config_path}')
+
+    if len(config_result) == 0 :
+        raise ImportError('Please put config.ini in the correct location!!')
+    return config # This is a MUSTTT
+
+```
+
+To then properly use it in your `main.py`
+
+```python
+
+import utils.setup_config import set_up_config
+
+def main():
+    config = set_up_config() # Setup config ini
+    secret = set_up_secret() # Setup secret ini
+
+    __version__ = config["APPLICATION"]["version"]
+
+    sub_function(inputDir=config["SENDINGAPI"]["inputDir"])
+
+```
+
+# logging (in python)
+
+
 
 # Tox 
 
@@ -91,7 +137,7 @@ def is_prime(num):
 # Means applying the function to each element in the list 
 primes_slow = list(filter(is_prime,nums)) # list of filter object 
 ```
-{:.note}
+{: .note }
 
 primes_slow returns a 1, which is NOT a prime number
 {:.warning}
