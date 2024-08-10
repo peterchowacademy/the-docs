@@ -22,9 +22,12 @@ Tox is a venv managing tool that aims to integrate automative and standardize te
 You can follow this to setup your tox envs
 
 > Note: the `ca-bundle.crt` looks like
+> A softlink to the `tls-ca-bundle.pem` !
 > AB UniPass Authentications Root CA
 > --- Begin Certificate ---
-> AB UniPass Root CA, ACCVRAIZ1, AC RAIZ FNMT-RCM, Actalis Auth Root CA, AffirmTrust Networking, Affirmtrust Premium, Amazon Root CA2, 
+> AB UniPass Root CA, ACCVRAIZ1, AC RAIZ FNMT-RCM, Actalis Auth Root CA, AffirmTrust Networking, Affirmtrust Premium, Amazon Root CA2, Amazon Root CA 3, Atos TrustredRoot 2011, ... emSignECC Root CA - G3
+
+> There's another file called `ca-bundle.trust.crt`
 
 ```ini
 [tox]
@@ -42,6 +45,31 @@ setenv=
 
 
 [testenv:poetry]
+commands_pre =
+    poetry lock --no-update
+    poetry install --no-root
+commands=
+    poetry {posargs}
+
+
+[testenv:{format, checkformat}]
+commands_pre =
+    poetry lock --no-update
+    poetry install --no-root --with format
+commands=
+    format: black . {posargs}
+    check_format: black --check --diff --color . {posargs}
+    pflake8
+
+[testenv:test]
+commands_pre =
+    poetry lock --no-update
+    poetry install --no-root --with test
+setenv =
+    {[testenv]setenv}
+commands=
+    pytest -o log_cli=true -rA
+
 
 ```
 
