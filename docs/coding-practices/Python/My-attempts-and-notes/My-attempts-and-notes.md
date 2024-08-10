@@ -51,13 +51,54 @@ def main():
     config = set_up_config() # Setup config ini
     secret = set_up_secret() # Setup secret ini
 
-    __version__ = config["APPLICATION"]["version"]
+    __version__ = config["APP_NAME"]["version"]
 
     sub_function(inputDir=config["SENDINGAPI"]["inputDir"])
 
 ```
 
 # logging (in python)
+
+```python
+import time
+import os
+from os import path
+
+def get_log_file_name(logDir:str):
+    os.makedirs(logDir, exist_ok=True)
+    i = 0
+    filename = f"{logDir}{time.strftime('%Y-%m-%d')}{str(i)}-LOG.log"
+    while path.exists(filename):
+        i += 1
+        filename = f"{logDir}{time.strftime('%Y-%m-%d')}{str(i)}-LOG.log"
+    return filename
+
+```
+
+in `main.py`
+
+```python
+
+from utils.log_generation import get_log_file_name
+import logging
+
+
+logDir = config["APP_NAME"]["log_dir"]
+filename = get_log_file_name(logDir)
+
+logging.basicConfig(filename=filename, level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
+logging.getLogger().addHandler(logging.StreamHandler())
+sys.excepthook = excepthook
+
+
+logging.info ("DONE!!")
+
+def excepthook(type_, value, traceback):
+    logging.getLogger().exception(value)
+    sys.__excepthook__(type_, value, traceback)
+
+
+```
 
 
 
