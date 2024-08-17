@@ -18,7 +18,7 @@ https://user-images.githubusercontent.com/85418632/211225192-7e5d1116-2f4f-4305-
 > I pretty much gave up on using RVM and used asdf instead (RVM = manages Ruby Version, asdf = manages more than Ruby, could be python ...)
 > There are some conflicts with rvm & asdf, hence rvm was removed. Use `rvm implode` to remove all /rvm & `gem uninstall rvm` removing all rvm gems rubbies
 
-note: both rvm and asdf are depdencies managing tools
+note: both rvm and asdf are depdencies managing tools 
 
 ### Reference  from (https://gorails.com/setup/ubuntu/24.04)
 
