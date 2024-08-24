@@ -11,21 +11,21 @@ grand_parent: Cooking 🍙🍣🍱🥢
 | :---------:  | :---------: | :---------:  | :---------:  |
 | 1      | Water     | 3/4 Cup | 174g |
 | 2   | Whole Milk     | 1/2 Cup | 125g |
-| 3   | <a href="https://hk.iherb.com/pr/frontier-co-op-organic-garam-masala-seasoning-with-cardamom-cinnamon-cloves-1-79-oz-51-g/101645">Garam Masala<a/>        | 1/4 tablespoon | 11g |
-| 4   | Parprika        | 1 teaspoon | 3g |
-| 5   | Finely Chopped Garlic cloves        |  | 5 cloves |
-| 6   | Grated fresh ginger     | grate 2 inches |  |
-| 7   | Diced Boneless, skinless Chicken Thighs        | 2 lbs | 900g |
-| 8   | Vegetable oil        |  | 24g |
-| 9   | Sliced Onion        |  | 1 whole |
-| 10   | Chopped Knob of ginger again       |  | 2 inches |
-| 11  | Thinly sliced Cloves of garlic again       |  | 3 cloves |
-| 12   | touch of salt        |  |  |
-| 13   | Parparika again        |  |  |
-| 14   | Chicken Thigh (Amy)        |  |  |
-| 15   | Text        |  |  |
-| 16   | Text        |  |  |
-| 17   | Text        |  |  |
-| 18   | Text        |  |  |
-| 19   | Text        |  |  |
+| 3   | Yeast| 1 packet | 9g |
+| 4   | Bread Flour        | 3 Cups | 440g |
+| 5   | Fine Sea Salt       |  1.5 teaspoons | 8g |
+| 6   | GGranulated Sugar   | 1 tablespoon | 21g |
+| 7   | Unsalted butter (softened) | 3 tablespoons | 42g |
+
+## Steps
+
+1. Combined milk + water, heat up to 37 degree C and add to dry yeast. Cover with plastic wrap and let rest for 10 mins
+
+2. Wisk together bread flour, sea salt, sugar until homogogenous. Then mix in unsalted butter, 1 tablespoon at a time
+
+3. Place blob in greased bowl, cover with plastic wrap, let sit in room temp for 1.5 hours
+
+4. Grease loaf pan with butter, punch your dough down
+
+
 
