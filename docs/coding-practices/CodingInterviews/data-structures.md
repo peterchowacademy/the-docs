@@ -18,3 +18,6 @@ has_children: true
 # Algos and Data Structs for noobs
 
 ## Arrays
+### Static Arrays
+
+### Dyanamics Arrays
