@@ -81,6 +81,7 @@ in `main.py`
 
 from utils.log_generation import get_log_file_name
 import logging
+import sys
 
 
 logDir = config["APP_NAME"]["log_dir"]
