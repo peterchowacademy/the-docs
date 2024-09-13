@@ -12,7 +12,7 @@ permalink: /docs/economics
 1. Public ownership = ownership of a government body w/ the right to...
     - possess
     - control
-    - use &
+    - use
     - dispose of properties
 2. There are 2 forms of public ownership
     - Government departments
