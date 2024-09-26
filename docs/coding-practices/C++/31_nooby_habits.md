@@ -16,15 +16,15 @@ has_children: true
 
 # Things you should avoid when coding in C++!
 
-## 1. `using namespace std;`
+## 1. Use global `using namespace std;`
 
 ```c++
-// DON'T do this :()
+// DON'T do this :(
 #include xxx
 
 void using_namespace_std() {
     using namespace std;
-    string s{"hello, world"};
+    string s = "hello, world";
     cout << s << endl;
 }
 ```
@@ -35,7 +35,7 @@ void using_namespace_std() {
 using namespace std;
 
 void using_namespace_std() {
-    string s{"hello, world"};
+    string s = "hello, world";
     cout << s << endl;
 }
 ```
