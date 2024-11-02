@@ -163,11 +163,18 @@ grossPay = basePay + overTimePay
 
 # 1.9 Typical C dev environemnt
 
+0. Terminology:
+- Division by zero error: runtime/ execution-time error (This is a fatal error)
+- Object code = machine (language) code
+- Syntax error = compile error = compile time error
+- gcc program = GNU C compiler = will handle phase 3 and 4
+
+
 1. C system has 3 parts: Dev env, C language, C standard lib (std)
 2. We can define the following 6 phases:
-- phase 1 (Edit): Progammer creates program in editor and store on disk
-- phase 2 (Pre-process): pre-processor proceess code
-- phase 3 (Compile): compiler creates object code and stores on disk
+- phase 1 (Edit): Progammer creates program in editor (i.e. `vi` and `emac`) and store on disk (for C it's a `.c` file)
+- phase 2 (Pre-process): pre-processor auto  pre-proceess code under pre-processing directives (Check Ch.13)
+- phase 3 (Compile): compiler creates object code & stores on disk (aka: C program code to machine code, where synyax error can occur)
 - phase 4 (Link): Linker links object code w/ libs and geneartes executable, stores on disk
 - phase 5 (Load): loader takes executable from disk puts program in mem
 - phase 6 (Execute): CPU takes instruction and execute, if new data appears it will be stored
