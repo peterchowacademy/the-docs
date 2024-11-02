@@ -12,6 +12,7 @@ grand_parent: Coding Practices
 
 1. TOC
 {:toc}
+
 ---
 
 # 1.1 Introduction
