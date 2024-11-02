@@ -37,6 +37,13 @@ grand_parent: Coding Practices
 
 # 1.3 Data Hierarchy
 
-0. 
+0. From simpliest to richest
+- bits
+- chars
+- fields
+- records
+- files
+- database
+- big data
 
 1. Bits
