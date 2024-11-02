@@ -18,7 +18,7 @@ grand_parent: Coding Practices
 # 1.1 Introduction
 
 ## Common C Compliers
-1. GNU gcc complier
+1. GNU gcc [complier](/docs/medical)
 2. Microsoft Visual C++ complier (Complies C too)
 
 # 1.2 Software vs Hardware

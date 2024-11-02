@@ -23,7 +23,7 @@ permalink: /docs/medical
 6. Amy - medical staff boss
 7. Ronald - go back to N. hospital
 8. Vivian - roomate
-9. Pensi - senior d person in same room
+9. Pensi - senior d person, in same room
 10. Justin T - Josh's roomate, 29 years old (2 years above J.)
 11. Hannah - QM athro transferred here
 
