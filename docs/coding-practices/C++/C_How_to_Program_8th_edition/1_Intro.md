@@ -182,9 +182,33 @@ grossPay = basePay + overTimePay
 
 # 1.10 Running on Windows/Linux/MacOSX
 
-1. Windows (Command Prompt, )
+1. Windows (Command Prompt) : Execute with `c:\...\Windows>app_name` windows assume file to be .exe by default
 
-2. Linux ()
+2. Linux (Shell + GNU C):
+- `gcc -str=c11 app_name.c -o app_name`
+- `./app_name` 
 
-3. MacOSX
+3. MacOSX (Terminal)
+- `clang app_name.c -o app_name`
+- `./app_name` 
+
+# 1.11 OS
+- windows: mid 80s, evolved from DOS and inspired by Mac OS. Proprietary = controlled by Microsoft !
+- linux: Open source, used in servers & embedded sys
+- MacOS: Proprietary, iOS is derived from NeXTSTEP when accquired in 1996.
+- Google Android OS (accrquired in 2005): Based on Linux kernel + Java.
+
+# 1.12 Internet and WWW
+0. Terminology:
+- ARPA = Advanced Research Projects Agency of US DoD
+- TCP = Transmission Control Protocol
+- Packets = message of sequentically numbered pieces
+
+1. Late 60s, ARPA funded many networking research and Uni to enhance op speed from 110 bit/s to 50,000 bit/s
+2. This created ARPANET, the pre-crusor of internet
+3. Network protocol/rules for talking on ARPANET = TCP, to ensure message (packets) quality & re-packagement
+
+# 1.13 Internet & IP
+
+1. ARPA wanted different networks to communicate = IP = network of networks. New protocol = TCP/IP
 
