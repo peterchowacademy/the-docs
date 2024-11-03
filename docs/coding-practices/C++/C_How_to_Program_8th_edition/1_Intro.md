@@ -168,6 +168,7 @@ grossPay = basePay + overTimePay
 - Object code = machine (language) code
 - Syntax error = compile error = compile time error
 - gcc program = GNU C compiler = will handle phase 3 and 4
+- streams = stdin, stdout (output to screen/ another stream), stderr (standard error stream to log error)
 
 
 1. C system has 3 parts: Dev env, C language, C standard lib (std)
@@ -178,4 +179,12 @@ grossPay = basePay + overTimePay
 - phase 4 (Link): Linker links object code w/ libs and geneartes executable, stores on disk
 - phase 5 (Load): loader takes executable from disk puts program in mem
 - phase 6 (Execute): CPU takes instruction and execute, if new data appears it will be stored
+
+# 1.10 Running on Windows/Linux/MacOSX
+
+1. Windows (Command Prompt, )
+
+2. Linux ()
+
+3. MacOSX
 
