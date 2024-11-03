@@ -203,12 +203,30 @@ grossPay = basePay + overTimePay
 - ARPA = Advanced Research Projects Agency of US DoD
 - TCP = Transmission Control Protocol
 - Packets = message of sequentically numbered pieces
+- Ajax = a technology that helps internet based app performing like desktop apps (e.g. Google Maps)
+- Internet of things = more than network of computers but more
 
 1. Late 60s, ARPA funded many networking research and Uni to enhance op speed from 110 bit/s to 50,000 bit/s
 2. This created ARPANET, the pre-crusor of internet
 3. Network protocol/rules for talking on ARPANET = TCP, to ensure message (packets) quality & re-packagement
 
-# 1.13 Internet & IP
+4. ARPA wanted different networks to communicate = IP = network of networks. New protocol = TCP/IP
+5. CREN (Europe) pls dev a hyperlinked text document called HTML and communication protocol: HTTP
 
-1. ARPA wanted different networks to communicate = IP = network of networks. New protocol = TCP/IP
+# 1.13 Software terminologies
 
+1. Agile software development : A methodology to implement app faster with fewer resources
+2. Refactoring: reworking code for maintainability, to make cleaner & easier to understand code. Used with Agile
+3. Design Patterns: Building flexible, maintainable OOP code. Encourages reusing code to save time, money and effort
+4. LAMP: Open source technologies (Linux, Apache, MySQL, PHP/Python)
+5. SaaS: Software as a service, Software running on internet, update server then update everything. 
+6. PaaS: Platform as a servivec, a computing platform for running SaaS on web. (e.g. AWS EC2, Azure ...)
+7. Cloud computing: Both SaaS and PaaS are cloud computed, saving cost (updating, security, DR, backups)
+8. SDK: Software dev kit containing tools and docs for devs to program apps
+
+## Stages of dev & release
+1. Alpha: 1st release, under active dev with bugs & unstable & incomplete. Release to small num of devs to test
+2. Beta: Released to more devs, fixed major bugs, new features almost done but still subject to change
+3. Release candidates: Feature complete, mostly bug free and ready to ship to different UAT env and sys.
+4. Final release: Corrected bugs from release candidates, release to general public
+5. Continous beta: no version numbers, hosted on cloud and not installed locally
