@@ -52,4 +52,4 @@ int main (void) { // One function must be "main" // int = return value is int //
 1. Standard lib function (i.e. `printf` & `scanf`), compiler cannot identify spelling error, linker can!
 2. Linker locates lib f(x) and insert calls into the object program . That's why Linker = executable
 
-# 2.3 Adding 2 ints, a simple program
+# 2.3 Adding 2 integers, a simple program
