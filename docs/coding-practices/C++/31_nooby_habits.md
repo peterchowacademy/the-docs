@@ -23,7 +23,7 @@ has_children: true
 #include xxx
 
 void using_namespace_std() {
-    using namespace std;
+    using namespace std; //don't use std in scope
     string s = "hello, world";
     cout << s << endl;
 }
