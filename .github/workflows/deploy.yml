@@ -53,10 +53,11 @@ jobs:
       # Note: this only encrypts .html pages and not any of the corresponding assets.
       - name: Encrypt pages with PageCrypt
         run: |
+          ls -altr
+          chmod 777 -R _site/
           npm i -D pagecrypt
           ls -altr
           cat _protected_pages.txt | while read file password;
-          chmod 777 -R _site/
           do
             sudo npx pagecrypt "_site/docs/$file" "_site/docs/$file" "$password"
           done
