@@ -54,7 +54,7 @@ jobs:
           npm i -D pagecrypt
           cat _protected_pages.txt | while read file password;
           do
-            sudo npx pagecrypt "_site/$file" "_site/$file" "$password"
+            sudo npx pagecrypt "_site/docs/$file" "_site/docs/$file" "$password"
           done
       # End encryption code.
 
@@ -63,7 +63,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
 
       - name: Sanity Check
-        run: ls -altr
+        run: cd _site/docs/ && ls -altr
 
   # Deployment job
   deploy:
