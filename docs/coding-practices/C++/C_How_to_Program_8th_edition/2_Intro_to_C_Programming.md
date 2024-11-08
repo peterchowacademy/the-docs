@@ -53,3 +53,26 @@ int main (void) { // One function must be "main" // int = return value is int //
 2. Linker locates lib f(x) and insert calls into the object program . That's why Linker = executable
 
 # 2.3 Adding 2 integers, a simple program
+
+1. To re-iterate some useful commands: `scanf` (To read in an integer)
+
+e.g. 
+```C++
+int main (void){
+    int integer1;
+    scanf("%d", &integer1)
+}
+```
+
+2. `printf` is to print the value of the variable
+
+e.g. 
+```C++
+int main (void){
+    int sum; // variable definitions. Multiple vars be defined on the same line in 1 statement
+    printf("%d", &sum)
+}
+```
+## Good coding syntax tips
+1. use `main` instead of `Main` (lowercase for function name)
+2. Avoid starting strings w/ underscore `_` so it doesn't conflict with stan lib/compiler generated identifiers!
