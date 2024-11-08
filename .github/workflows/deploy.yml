@@ -49,6 +49,9 @@ jobs:
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v3
 
+      - name: Sanity Check
+        run: cd _site && ls -altr
+
   # Deployment job
   deploy:
     environment:
