@@ -61,7 +61,6 @@ jobs:
           do
             sudo npx pagecrypt "_site/docs/$file" "_site/docs/$file" "$password"
           done
-          npm audit fix
       # End encryption code.
 
       - name: Upload artifact
@@ -69,7 +68,7 @@ jobs:
         uses: actions/upload-pages-artifact@v1
 
       - name: Sanity Check
-        run: cd _site/docs/ && ls -altr
+        run: cd _site/docs/ && ls -altr && cat medical.html
 
   # Deployment job
   deploy:
