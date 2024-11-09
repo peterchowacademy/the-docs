@@ -5,6 +5,9 @@ nav_order: 2
 has_children: true
 permalink: /docs/medical
 ---
+# Offical Website 
+[Click me](https://www.cuhk.edu.hk/med/acp/acp/profiles.html#)
+
 # Terminologies
 1. ABG: Arterial Blood Gases
 2. ACP: Anatomical Cellular Pathalogy
@@ -14,7 +17,7 @@ permalink: /docs/medical
 6. Cyto technician: Junior won't see, read easy pap smears
 7. Slide: under the microscope
 
-8. Part I and Part II (): Member (will take in 3 years); Fellow (after 5 years from now)
+8. Part I and Part II: Member (will take in 3 years); Fellow (after 5 years from now)
 
 # Cyto vs Hiso
 - Histo is more tissue arch, blob -> cut; Cyto is more brust of cells (ie. blood drawn)
