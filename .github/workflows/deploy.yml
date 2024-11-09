@@ -62,11 +62,13 @@ jobs:
           
           sudo npx pagecrypt "_site/docs/medical.html" "_site/docs/medical.html" "$PROD_MEDICIAL_PASSWORD" --force
 
-          for dir in _site/docs/diving/*/*/; do
-            for file in "$dir"*.html; do
-              sudo npx pagecrypt "$file" "$file" "$PROD_DIVING_PASSWORD" --force
+            for dir in _site/docs/diving/*/; do
+              for subdir in "$dir"*/; do
+                for file in "$subdir"index.html; do
+                  sudo npx pagecrypt "$file" "$file" "$PROD_DIVING_PASSWORD" --force
+                done
+              done
             done
-          done
         env:
           NODE_ENV: production
           PROD_MEDICIAL_PASSWORD: ${{ secrets.PROD_MEDICIAL_PASSWORD }}
