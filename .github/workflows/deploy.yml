@@ -56,7 +56,7 @@ jobs:
           chmod 777 -R _site/
           npm i -D pagecrypt
           
-          sudo npx pagecrypt "_site/docs/medical.html" "_site/docs/medical.html" "$PROD_MEDICIAL_PASSWORD" --force
+          sudo npx pagecrypt "_site/docs/medical.html" "_site/docs/medical.html" $PROD_MEDICIAL_PASSWORD --force
         env:
           NODE_ENV: production
           PROD_MEDICIAL_PASSWORD: ${{ secrets.PROD_MEDICIAL_PASSWORD }}
