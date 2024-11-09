@@ -47,29 +47,34 @@ jobs:
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
+    
+  encrpt_and_deoloy:
+    environment: "PROD"
+    build:
+      runs-on: ubuntu-latest
+      steps:
+        # Begin encryption code.
+        # This portion of the build job was written by Evan Baldonado (EvanBaldonado.com). Please do not remove this comment.
+        # Note: this only encrypts .html pages and not any of the corresponding assets.
+        - name: Encrypt pages with PageCrypt
+          run: |
+            chmod 777 -R _site/
+            cat "$PROD_MEDICIAL_PASSWORD" | echo "WHAT IS THIS"
 
-      # Begin encryption code.
-      # This portion of the build job was written by Evan Baldonado (EvanBaldonado.com). Please do not remove this comment.
-      # Note: this only encrypts .html pages and not any of the corresponding assets.
-      - name: Encrypt pages with PageCrypt
-        run: |
-          chmod 777 -R _site/
-          cat "$PROD_MEDICIAL_PASSWORD" | echo "WHAT IS THIS"
+            npm i -D pagecrypt
+            
+            sudo npx pagecrypt "_site/docs/medical.html" "_site/docs/medical.html" "$PROD_MEDICIAL_PASSWORD" --force
+          env:
+            NODE_ENV: production
+            PROD_MEDICIAL_PASSWORD: ${{ secrets.PROD_MEDICIAL_PASSWORD }}
+        # End encryption code.
 
-          npm i -D pagecrypt
-          
-          sudo npx pagecrypt "_site/docs/medical.html" "_site/docs/medical.html" "$PROD_MEDICIAL_PASSWORD" --force
-        env:
-          NODE_ENV: production
-          PROD_MEDICIAL_PASSWORD: ${{ secrets.PROD_MEDICIAL_PASSWORD }}
-      # End encryption code.
+        - name: Upload artifact
+          # Automatically uploads an artifact from the './_site' directory by default
+          uses: actions/upload-pages-artifact@v3.0.1
 
-      - name: Upload artifact
-        # Automatically uploads an artifact from the './_site' directory by default
-        uses: actions/upload-pages-artifact@v3.0.1
-
-      - name: Sanity Check
-        run: cd _site/docs/ && ls -altr
+        - name: Sanity Check
+          run: cd _site/docs/ && ls -altr
 
   # Deployment job
   deploy:
