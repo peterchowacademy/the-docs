@@ -59,8 +59,14 @@ jobs:
           ls -altr
           cat _protected_pages.txt | while read file password;
           do
+            echo "Encrypting $file with password $password"
             sudo npx pagecrypt "_site/$file" "_site/$file" "$password"
+            if [ $? -ne 0 ]; then
+              echo "Failed to encrypt $file"
+            fi
           done
+        env:
+          NODE_ENV: production
       # End encryption code.
 
       - name: Upload artifact
