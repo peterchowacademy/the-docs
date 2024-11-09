@@ -26,18 +26,18 @@ grand_parent: Coding Practices
 2. Hardware: Controlling computers
 3. Moore's Law (trend): 60s Co-founder of intel said the computer power doubling while costs halved every couple of years
 4. Computer terms:
-- Input unit: Receving
+- Input unit: Receiving
 - Output unit: Shipping
 - Memory unit: RAM = primary memory
 - byte = 8 bits
 - bit = 1 or 0
-- ALU = Arithmetic and logic Unit, imlpemented in CPU
+- ALU = Arithmetic and logic Unit, implemented in CPU
 - CPU = admin 
 - Secondary storage unit = warehousing = external hard drives
 
 # 1.3 Data Hierarchy
 
-## From simpliest to richest
+## From simplest to richest
 - bits: 0 or 1, short for "binary digit"
 - chars: digits + letters + special symbols
     - C supports Unicode, Unicode contains 1/2/4 bytes 
@@ -50,7 +50,7 @@ grand_parent: Coding Practices
 
 # 1.4 Machine language, Assembly and Assemblers, High level
 
-All modern day programing language can be sorted into 3 types: machine code, assembly code, high level
+All modern day programming language can be sorted into 3 types: machine code, assembly code, high level
 
 There are 2 translator programs: 
 - assembler for assembly code
@@ -70,7 +70,7 @@ cons: too slow and tedious
 ## Assembly Code
 
 1. Assembly languages: using eng abbr. for operations
-2. Requires translator programs (aka: assemblers) to complie assembly to machine code
+2. Requires translator programs (aka: assemblers) to compile assembly to machine code
 
 ```bash
 load    basepay
@@ -85,7 +85,7 @@ grossPay = basePay + overTimePay
 ```
 
 ## Interpreters
-1. No need to compile high level via complier, interpreter can execute high-level directly (slower in performence)
+1. No need to compile high level via complier, interpreter can execute high-level directly (slower in performance)
 
 # 1.5 C Programming Language
 
@@ -98,31 +98,31 @@ grossPay = basePay + overTimePay
 - C is evolved from BCPL & B
 - BCPL = dev in 1967 for OS and compiler
 - B = used to build Bell Lab in 1970 with features from BCPL
-- C started in 1972, main language in UNIX OS. C is MOSTLY hardware indepdent, works and portable to most PCs
+- C started in 1972, main language in UNIX OS. C is MOSTLY hardware indpt., works and portable to most PCs
 
 2. Pros of C
-- Build for performence:
-    - C is used for building OS (Objective C in Apple OS, Google Android, Windows), embedded sys (Navigations, microprocessors, home security systems (can run as fast as possible to save memories)), real-time systems (air traffic systems), comunication systems (devlivering data without delay and loss)
-- Standarizations:
-    - Before 1983, there are many hardware platoform implementation of C
+- Build for performance:
+    - C is used for building OS (Objective C in Apple OS, Google Android, Windows), embedded sys (Navigation, microprocessors, home security systems (can run as fast as possible to save memories)), real-time systems (air traffic systems), communication systems (delivering data without delay and loss)
+- Standardizations:
+    - Before 1983, there are many hardware platform implementation of C
     - New committee X3J11 created under X3 (= ANS Committee on computers and information processing)
     - The standard was admitted by ANSI and then ISO in 1999, know as standard C (aka C99)
     - Latest C is C11
 
 # 1.6 C Standard Library
 - C has standard lib containing functions 
-- Efficency is a core of these standard lib functions
+- Efficiency is a core of these standard lib functions
 - using standard lib = better portability = better access to other platforms
 
 # 1.7 Other C based languages
 - (Visual) C++ was dev by Bell Lab
     - Object-orientated (reusable components) = modular design = more productive, easier to understand, modify
     - C++ to be explained in ch.15-23
-- Objective-C: based in C, invented in eraly 1980s by NeXT and accquired by Apple. Used to build OS X, all iOS 
-- Java: inveted in 1991 by Sun Microsystems as internal research proj to run on broader comp sys and platforms. Java is used for web servers, consumer devices, large corps platforms and Andriod Apps.
+- Objective-C: based in C, invented in early 1980s by NeXT and acquired by Apple. Used to build OS X, all iOS 
+- Java: invented in 1991 by Sun Microsystems as internal research proj to run on broader comp sys and platforms. Java is used for web servers, consumer devices, large corps platforms and Android Apps.
 - (Visual) C#: Object-orientated, based on C++ and Java, used for integrating internet and web
 - PHP: Object-oriented & open source. Platform independent for all OS e.g.UNIX, Linux, Windows... PHP supports DB e.g. MySQL
-- Python: Released publicly in 1991 in Amsterdam, dervied from Modula-3 (programming language)
+- Python: Released publicly in 1991 in Amsterdam, derived from Modula-3 (programming language)
 - JavaScript: For adding dynamic behavior to webpages (i.e. animations, user interactions ...)
 - Swift: Introduced in 2014 on WWDC, not as complicated as Objective C. Focus on performenace, security, mac & ios programming abilities.
 

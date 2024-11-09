@@ -22,7 +22,7 @@ grand_parent: Coding Practices
 - Ch.3 and Ch.4 will cover C structured programming
 - Programming in C securely is the gist!
 
-# 2.2 Priting text, a simple program 
+# 2.2 Printing text, a simple program  
 
 - comments: for documentation
 - Functions: Perform action and makes decision = Action-decision model
@@ -47,7 +47,7 @@ int main (void) { // One function must be "main" // int = return value is int //
 - Escape chars:
     - `\n` = New line
     - `\t` = Horizontal tab
-    - `\a` = Alert sound/ visable alert
+    - `\a` = Alert sound/ visible alert
     - `\\` = Backslash raw string (since just `\` is part of an escape char)
     - `\"` = Double quote raw string
 
@@ -69,7 +69,7 @@ int main (void){
 
 2. `printf` is to print the value of the variable
 
-`%d` is know as the **decimal integer**, where the `%` is a **conversion specificier**
+`%d` is know as the **decimal integer**, where the `%` is a **conversion specifier**
 `&` is the **address operator**
 
 e.g. 
@@ -82,11 +82,23 @@ int main (void){
 ## Good coding syntax tips
 1. use `main` instead of `Main` (lowercase for function name)
 2. Avoid starting strings w/ underscore `_` so it doesn't conflict with stan lib/compiler generated identifiers!
-3. Camel cases are preferred in C (snak_cases can be used too)
+3. Camel cases are preferred in C (snake_cases can be used too)
 
 {: .warning }
-> If you forget to preceed a variable with `&` is trggers execution-time error (aka: segmentation fault/ access violation). In a nutshell, the compiled program is accessing a memory that it doesn't have access to. Will be address in Ch.7 
+> If you forget to precede a variable with `&` is triggers execution-time error (aka: segmentation fault/ access violation). In a nutshell, the compiled program is accessing a memory that it doesn't have access to. Will be address in Ch.7 
 
 # 2.4 Concept of memory
-- destructive variables: Replacing old value, old value is lost 
-- non-destructive variables: 
+- destructive variables: Replacing old value, old value is lost (replacing existing/ creating var)
+- non-destructive variables: Reading in values from memory (calling variable)
+
+# 2.5 Arithmetic in C
+
+{: .warning }
+> - Non-fatal errors: Program still runs to completion with incorrect outputs
+> - Fatal errors: Divide by zero error, program crashes immediately
+
+- `%` reminder operator
+- `*` multiplication
+- Associativity: evaluated from right to left or vice versa = rearranging `()` while not affecting final result
+
+# 2.6 Relational and Equality Operators
