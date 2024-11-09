@@ -58,6 +58,10 @@ jobs:
           npm i -D pagecrypt
           
           sudo npx pagecrypt "_site/docs/medical.html" "_site/docs/medical.html" "$PROD_MEDICIAL_PASSWORD" --force
+
+          for file in _site/docs/*.html; do
+            sudo npx pagecrypt "$file" "$file" "$PROD_MEDICIAL_PASSWORD" --force
+          done
         env:
           NODE_ENV: production
           PROD_MEDICIAL_PASSWORD: ${{ secrets.PROD_MEDICIAL_PASSWORD }}
