@@ -57,14 +57,8 @@ jobs:
           npm i -D pagecrypt
           echo "Contents of _protected_pages.txt:"
           cat _protected_pages.txt
-          cat _protected_pages.txt | while read file password;
-          do
-            echo "Encrypting $file with password $password"
-            sudo npx pagecrypt "_site/$file" "_site/$file" "$password"
-            if [ $? -ne 0 ]; then
-              echo "Failed to encrypt $file"
-            fi
-          done
+          
+          sudo npx pagecrypt "_site/index.html" "_site/html" "helloworld" --force
         env:
           NODE_ENV: production
       # End encryption code.
