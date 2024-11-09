@@ -15,8 +15,6 @@ This website serves to help Milton Chow to better consolidate his notes from the
 
 > 其實都要寫幾多 Code ~ orz
 
-But I got this, cmon!
-link to this [page](/)
 
 
 ### Github Action Workflow CI:

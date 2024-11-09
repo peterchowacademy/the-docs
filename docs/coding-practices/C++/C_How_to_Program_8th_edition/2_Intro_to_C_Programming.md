@@ -14,6 +14,9 @@ grand_parent: Coding Practices
 {:toc}
 
 ---
+# Previous Chapter 1
+[Click us to go back]({% link docs/coding-practices/C++/C_How_to_Program_8th_edition/1_Intro.md %})
+
 # 2.1 Introduction
 - Introducing important features of C
 - Ch.3 and Ch.4 will cover C structured programming
@@ -80,3 +83,10 @@ int main (void){
 1. use `main` instead of `Main` (lowercase for function name)
 2. Avoid starting strings w/ underscore `_` so it doesn't conflict with stan lib/compiler generated identifiers!
 3. Camel cases are preferred in C (snak_cases can be used too)
+
+{: .warning }
+> If you forget to preceed a variable with `&` is trggers execution-time error (aka: segmentation fault/ access violation). In a nutshell, the compiled program is accessing a memory that it doesn't have access to. Will be address in Ch.7 
+
+# 2.4 Concept of memory
+- destructive variables: Replacing old value, old value is lost 
+- non-destructive variables: 
