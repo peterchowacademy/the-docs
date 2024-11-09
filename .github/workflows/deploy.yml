@@ -10,7 +10,7 @@ on:
   pull_request:
     types: [closed]
   push:
-    branches: [main]
+    branches: [main,master,milton]
   workflow_dispatch:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
@@ -56,9 +56,10 @@ jobs:
           chmod 777 -R _site/
           npm i -D pagecrypt
           
-          sudo npx pagecrypt "_site/docs/medical.html" "_site/docs/medical.html" "helloworld" --force
+          sudo npx pagecrypt "_site/docs/medical.html" "_site/docs/medical.html" "$PROD_MEDICIAL_PASSWORD" --force
         env:
           NODE_ENV: production
+          PROD_MEDICIAL_PASSWORD: ${{ secrets.PROD_MEDICIAL_PASSWORD }}
       # End encryption code.
 
       - name: Upload artifact
