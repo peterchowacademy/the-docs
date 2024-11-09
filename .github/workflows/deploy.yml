@@ -41,19 +41,12 @@ jobs:
         id: pages
         uses: actions/configure-pages@v5
 
-      - name: Build
-        uses: actions/jekyll-build-pages@v1
-        with:
-          source: "./docs"
-          destination: "./output"
-          verbose: true
-      
-      # # Remove to check workflow
-      # - name: Build with Jekyll
-      #   # Outputs to the './_site' directory by default
-      #   run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
-      #   env:
-      #     JEKYLL_ENV: production
+      # Remove to check workflow
+      - name: Build with Jekyll
+        # Outputs to the './_site' directory by default
+        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+        env:
+          JEKYLL_ENV: production
 
       # Begin encryption code.
       # This portion of the build job was written by Evan Baldonado (EvanBaldonado.com). Please do not remove this comment.
@@ -66,7 +59,7 @@ jobs:
           ls -altr
           cat _protected_pages.txt | while read file password;
           do
-            sudo npx pagecrypt "_site/docs/$file" "_site/docs/$file" "$password"
+            sudo npx pagecrypt "_site/$file" "_site/$file" "$password"
           done
       # End encryption code.
 
@@ -75,7 +68,7 @@ jobs:
         uses: actions/upload-pages-artifact@v1
 
       - name: Sanity Check
-        run: cd _site/docs/ && ls -altr && cat medical.html
+        run: cd _site/ && ls -altr && cat index.html
 
   # Deployment job
   deploy:
