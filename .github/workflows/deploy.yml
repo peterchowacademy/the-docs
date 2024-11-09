@@ -58,7 +58,7 @@ jobs:
           echo "Contents of _protected_pages.txt:"
           cat _protected_pages.txt
           
-          sudo npx pagecrypt "_site/index.html" "_site/html" "helloworld" --force
+          sudo npx pagecrypt "_site/index.html" "_site/index.html" "helloworld" --force
         env:
           NODE_ENV: production
       # End encryption code.
