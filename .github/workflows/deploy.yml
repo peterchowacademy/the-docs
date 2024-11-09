@@ -50,7 +50,7 @@ jobs:
           JEKYLL_ENV: production
 
       - name: Sanity Check
-        run: cd _site/docs/diving/aow/ && ls -altr
+        run: cd _site/docs/diving/aow/aow/ && ls -altr
 
       # Begin encryption code.
       # This portion of the build job was written by Evan Baldonado (EvanBaldonado.com). Please do not remove this comment.
@@ -62,7 +62,7 @@ jobs:
           
           sudo npx pagecrypt "_site/docs/medical.html" "_site/docs/medical.html" "$PROD_MEDICIAL_PASSWORD" --force
 
-          for dir in _site/docs/diving/*/; do
+          for dir in _site/docs/diving/*/*/; do
             for file in "$dir"*.html; do
               sudo npx pagecrypt "$file" "$file" "$PROD_DIVING_PASSWORD" --force
             done
