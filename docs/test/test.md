@@ -10,8 +10,8 @@ permalink: /docs/test
 
 ![image](apple.svg "apple logo")
 ![image info](./apple.svg)
-![Apple](./apple.png)
-![Apple](/Users/Peter/PROJECT/the-docs/docs/test/apple.png)
+![Apple](./apple.webp)
+![Apple](/Users/Peter/PROJECT/the-docs/docs/test/apple.webp)
 ![Apple SVG](https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg)
 
 <li class="d-inline-block mr-1">
