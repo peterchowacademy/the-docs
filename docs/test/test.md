@@ -8,4 +8,4 @@ permalink: /docs/test
 
 # hello world!
 
-![image info](./apple.png)
+![image info](apple.png)
