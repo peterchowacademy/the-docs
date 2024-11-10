@@ -8,8 +8,8 @@ permalink: /docs/test
 
 # hello world!
 
-![image](apple.png "apple logo")
-![image info](./apple.png)
+![image](apple.svg "apple logo")
+![image info](./apple.svg)
 ![Apple](./apple.png)
 ![Apple](/Users/Peter/PROJECT/the-docs/docs/test/apple.png)
 ![Apple SVG](https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg)
