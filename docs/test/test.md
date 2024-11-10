@@ -9,3 +9,7 @@ permalink: /docs/test
 # hello world!
 
 ![image info](apple.png)
+
+<li class="d-inline-block mr-1">
+     <img src="apple.png">
+</li>
