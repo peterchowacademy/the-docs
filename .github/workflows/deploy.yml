@@ -10,7 +10,7 @@ on:
   pull_request:
     types: [closed]
   push:
-    branches: [main,milton,master]
+    branches: [main,master]
   workflow_dispatch:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
@@ -28,7 +28,6 @@ jobs:
   # Build job
   build:
     runs-on: ubuntu-latest
-    environment: "PROD"
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -48,32 +47,6 @@ jobs:
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
-
-      - name: Sanity Check
-        run: cd _site/docs/diving/aow/aow/ && ls -altr
-
-      # Begin encryption code.
-      # This portion of the build job was written by Evan Baldonado (EvanBaldonado.com). Please do not remove this comment.
-      # Note: this only encrypts .html pages and not any of the corresponding assets.
-      - name: Encrypt pages with PageCrypt
-        run: |
-          chmod 777 -R _site/
-          npm i -D pagecrypt
-          
-          sudo npx pagecrypt "_site/docs/medical.html" "_site/docs/medical.html" "$PROD_MEDICIAL_PASSWORD" --force
-
-            for dir in _site/docs/diving/*/; do
-              for subdir in "$dir"*/; do
-                for file in "$subdir"index.html; do
-                  sudo npx pagecrypt "$file" "$file" "$PROD_DIVING_PASSWORD" --force
-                done
-              done
-            done
-        env:
-          NODE_ENV: production
-          PROD_MEDICIAL_PASSWORD: ${{ secrets.PROD_MEDICIAL_PASSWORD }}
-          PROD_DIVING_PASSWORD: ${{ secrets.PROD_DIVING_PASSWORD }}
-      # End encryption code.
 
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
