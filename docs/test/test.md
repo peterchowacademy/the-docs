@@ -7,3 +7,5 @@ permalink: /docs/test
 ---
 
 # hello world!
+
+![image info](./apple.png)
