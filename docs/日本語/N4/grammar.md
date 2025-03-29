@@ -1,3 +1,11 @@
+---
+layout: default
+title: test
+nav_order: 1
+has_children: true
+permalink: /docs/test
+---
+
 **Table of Contents**
 
 1. 私は学生です　我是學生
