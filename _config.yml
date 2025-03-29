@@ -107,7 +107,7 @@ heading_anchors: true
 # Aux links for the upper right navigation
 aux_links:
   "Google - Hong Kong":
-    - "https://www.thisav.com"
+    - "https://www.google.com"
 
 # Makes Aux links open in a new tab. Default is false
 aux_links_new_tab: false
