@@ -6,6 +6,9 @@ grand_parent: japanese
 ---
 
 **Table of Contents**
+[TOCM]
+
+[TOC]
 
 1. 私は学生です　我是學生
 > 私（わたし）：主語，主題；  です：表示肯定；　学生：主語，主題的内容；　は：助詞；

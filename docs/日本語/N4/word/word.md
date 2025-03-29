@@ -6,7 +6,9 @@ grand_parent: japanese
 ---
 
 **Table of Contents**
+[TOCM]
 
+[TOC]
 
 # N5 Words
 ## First 100
