@@ -1,7 +1,7 @@
 ---
 title: word
 layout: default
-parent: japanese
+parent: N4
 grand_parent: japanese
 ---
 

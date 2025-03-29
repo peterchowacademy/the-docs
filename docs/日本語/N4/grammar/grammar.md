@@ -1,8 +1,8 @@
 ---
 title: grammar
 layout: default
-parent: japanese
-# grand_parent: japanese
+parent: N4
+grand_parent: japanese
 ---
 
 **Table of Contents**
