@@ -1,3 +1,10 @@
+---
+title: word
+layout: default
+parent: N4
+grand_parent: japanese
+---
+
 **Table of Contents**
 
 

@@ -1,9 +1,8 @@
 ---
+title: grammar
 layout: default
-title: test
-nav_order: 1
-has_children: true
-permalink: /docs/test
+parent: N4
+grand_parent: japanese
 ---
 
 **Table of Contents**
